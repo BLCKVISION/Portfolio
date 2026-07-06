@@ -27,14 +27,14 @@ const _allProjects = [
     folder: "Aura"
   }
 ].map(p => {
-  let prefix = '../img/projects/';
+  let prefix = 'img/projects/';
   const projectScript = document.querySelector('script[src*="projects.js"]');
   if (projectScript) {
     const src = projectScript.getAttribute('src');
     if (src && src.includes('project/')) {
       prefix = '../project/img/projects/';
-    } else if (src && src.startsWith('../../')) {
-      prefix = '../../img/projects/';
+    } else if (src && src.startsWith('../')) {
+      prefix = '../img/projects/';
     }
   }
   const dir = prefix + p.folder + '/';
