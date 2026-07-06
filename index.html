@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BLCK VISION</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/CustomEase.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
+  <link rel="stylesheet" href="projects.css">
+
+</head>
+
+<body>
+  <div id="preloader">
+    <div class="pre-word">
+      <span class="pre-letter">B</span><span class="pre-letter">L</span><span class="pre-letter">C</span><span
+        class="pre-letter">K</span>
+      <span class="pre-letter" style="width:.45em;display:inline-block;flex-shrink:0"></span>
+      <span class="pre-letter script">V</span><span class="pre-letter script">I</span><span
+        class="pre-letter script">S</span><span class="pre-letter script">I</span><span
+        class="pre-letter script">O</span><span class="pre-letter script">N</span>
+    </div>
+  </div>
+  <div id="cursor"></div>
+
+  <!-- ══ NAVBAR ════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-left">
+      <a href="#hero" class="nav-active-pill">INICIO</a>
+    </div>
+    <div class="nav-links">
+      <a href="#trust" class="nav-link">NOSOTROS</a>
+      <a href="#services" class="nav-link">SERVICIOS</a>
+      <a href="#entregamos" class="nav-link">PROYECTOS</a>
+    </div>
+    <div class="nav-right">
+      <a href="#" class="nav-cta" id="navContactCta">
+        CONTACTAR
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <path d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ══ HERO ════════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg">
+      <img src="img/H2.jpg" alt="BLCK VISION Hero" class="hero-bg-img" loading="eager" decoding="async">
+    </div>
+    <div class="sec-bar">
+      <span class="sec-bar-left">BLCK VISION</span>
+      <span class="sec-bar-center"></span>
+      <span class="sec-bar-right">19 — 26</span>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="line">DONDE LA <strong>ESTRATEGIA</strong> Y LA</span>
+        <span class="line"><strong>PRECISION ANULAN AL RUIDO</strong></span>
+      </h1>
+      <p class="hero-sub">
+        <span class="line">NO VENDEMOS <strong>TECNOLOGÍA</strong>, VENDEMOS <strong>SOLUCIONES A
+            PROBLEMAS</strong></span>
+      </p>
+      <div class="hero-scroll-indicator" id="heroScrollBtn" aria-label="Scroll down">
+        <svg class="scroll-chevron" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ STATEMENT ════════════════════════════════════ -->
+  <section id="statement">
+    <div class="sec-bar">
+      <span class="sec-bar-left">MANIFIESTO</span>
+      <span class="sec-bar-center"></span>
+      <span class="sec-bar-right">01 — 06</span>
+    </div>
+    <div class="stmt-body">
+      <p class="stmt-text" id="stmtText"></p>
+    </div>
+  </section>
+
+  <!-- ══ SERVICES ═══════════════════════════════════════ -->
+  <section id="services" class="grain">
+    <div class="sec-bar">
+      <span class="sec-bar-left">SERVICIOS</span>
+      <span class="sec-bar-center"></span>
+      <span class="sec-bar-right">02 — 06</span>
+    </div>
+    <div class="srv-container">
+      <div class="srv-intro-wrap">
+        <p class="srv-intro-text" id="srvIntroText">servicios Estrategicos</p>
+      </div>
+
+      <div class="srv-cards-wrap" id="srvCardsWrap">
+        <a href="services/identidad.html" class="srv-card-row hover-target">
+          <h3 class="srv-card-title">Identidad Visual</h3>
+          <p class="srv-card-desc">Sistemas de identidad completos: estrategia, diseño visual, voz de marca y
+            aplicaciones físicas y digitales.</p>
+          <span class="srv-card-arrow">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </span>
+        </a>
+
+        <a href="services/web.html" class="srv-card-row hover-target">
+          <h3 class="srv-card-title">Desarrollo Web</h3>
+          <p class="srv-card-desc">Plataformas digitales rápidas, responsivas, optimizadas para SEO y construidas con
+            arquitectura de conversión.</p>
+          <span class="srv-card-arrow">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </span>
+        </a>
+
+        <a href="services/automatizacion.html" class="srv-card-row hover-target">
+          <h3 class="srv-card-title">Automatización IA</h3>
+          <p class="srv-card-desc">Agentes autónomos, integraciones personalizadas y flujos de trabajo inteligentes que
+            eliminan tareas operativas repetitivas.</p>
+          <span class="srv-card-arrow">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CAROUSEL ═══════════════════════════════════════ -->
+  <section id="entregamos" style="position: relative; width: 100%; height: 100vh; overflow: hidden; background: #000;">
+    <div class="sec-bar" style="position: absolute; top: 0; left: 0; width: 100%; z-index: 99;">
+      <span class="sec-bar-left">PROYECTOS</span>
+      <span class="sec-bar-center"></span>
+      <span class="sec-bar-right">03 — 06</span>
+    </div>
+    <!-- BOTÓN VOLVER (fijo, oculto por defecto) -->
+    <div class="back-btn hover-target" id="back-to-slider">
+      <span>VOLVER</span>
+    </div>
+
+    <!-- WIDGET CONTRATAR FIJO -->
+    <div class="glass-widget-wrapper hover-target" id="hire-widget">
+      <div class="glass-widget">
+        <div class="widget-text">INICIAR PROYECTO</div>
+        <div class="widget-arrow">&#8594;</div>
+      </div>
+    </div>
+
+    <!-- UI: Barra inferior -->
+    <div class="ui-layer bottom-bar" id="ui-bottom">
+      <div></div>
+      <div id="slide-counter">01 &mdash; 06</div>
+    </div>
+
+    <!-- VISTA PROYECTO (detrás del slider) -->
+    <div id="project-view" data-lenis-prevent="true">
+      <div class="proj-hero-wrapper">
+        <img class="proj-hero" id="proj-main-img" src="" alt="Imagen del Proyecto">
+      </div>
+
+      <!-- Barra de título 20vh -->
+      <div class="proj-title-bar" id="proj-title-bar">
+        <h2 class="title-bar-title stagger-elem" id="proj-display-title">Nombre del Proyecto</h2>
+      </div>
+
+      <!-- Sección descripción -->
+      <div class="project-header" id="proj-header-area">
+        <div class="project-metadata stagger-elem">
+          <div class="meta-col">
+            <h4>UNA COLABORACIÓN CON</h4>
+            <p id="proj-client">Cliente</p><br>
+            <h4>CAPACIDADES</h4>
+            <p id="proj-caps">Capacidades</p>
+          </div>
+          <div class="meta-col desc">
+            <p id="proj-desc">Descripción</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-images" id="proj-images-container">
+        <div class="img-full"><img id="proj-img-2" alt="Imagen 2"></div>
+        <div class="img-full"><img id="proj-img-3" alt="Imagen 3"></div>
+        <div class="img-full"><img id="proj-img-4" alt="Imagen 4"></div>
+        <div class="img-full"><img id="proj-img-5" alt="Imagen 5"></div>
+        <div class="img-full"><img id="proj-img-6" alt="Imagen 6"></div>
+        <div class="img-full"><img id="proj-img-7" alt="Imagen 7"></div>
+        <div class="img-full"><img id="proj-img-8" alt="Imagen 8"></div>
+      </div>
+
+      <!-- PIE DE PÁGINA -->
+      <div class="cta-wrapper" id="proj-footer">
+        <div class="cta-section gs-reveal">
+          <div class="discover-more">
+            <div class="discover-grid" id="discover-grid" style="margin-bottom: 40px;"></div>
+            <div style="text-align: left;">
+              <button class="btn-ver-mas hover-target">VER MÁS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDER HERO (capa frontal) -->
+    <div id="slider-view" class="hover-target">
+      <div class="main-image-container" id="main-slider">
+        <div class="slider-track" id="main-slider-track"></div>
+      </div>
+
+      <!-- Blur overlay base del slider -->
+      <div class="slider-blur-overlay"></div>
+
+      <!-- Miniaturas -->
+      <div class="thumbnails-box" id="thumb-wrapper">
+        <div class="thumb-track" id="thumb-track"></div>
+      </div>
+      <div class="center-line-fixed" id="center-line"></div>
+    </div>
+  </section>
+  <!-- ══ METRICS ════════════════════════════════════════ -->
+  <section id="metrics">
+    <div class="sec-bar">
+      <span class="sec-bar-left">MÉTRICAS</span>
+      <span class="sec-bar-center"></span>
+      <span class="sec-bar-right">04 — 06</span>
+    </div>
+    <div class="mtr-inner">
+      <div class="mtr-left">
+        <h2 class="mtr-title"><span class="line"><span class="line-inner"><span class="regular">Métricas</span> que
+              definen valor</span></span></h2>
+        <a href="#" class="mtr-btn">CONOCE MÁS SOBRE NOSOTROS
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+      <div class="mtr-right">
+        <div class="mtr-item">
+          <div class="mtr-num"><span class="mtr-count" data-target="100">0</span><span class="mtr-suffix">+</span></div>
+          <p class="mtr-desc">Proyectos entregados con estrategia sólida y precisión visual.</p>
+        </div>
+        <div class="mtr-item">
+          <div class="mtr-num"><span class="mtr-count" data-target="98">0</span><span class="mtr-suffix">%</span></div>
+          <p class="mtr-desc">Clientes que vuelven por nuestra calidad y resultados probados.</p>
+        </div>
+        <div class="mtr-item">
+          <div class="mtr-num"><span class="mtr-count" data-target="86">0</span><span class="mtr-suffix">+</span></div>
+          <p class="mtr-desc">Marcas impactantes construidas con alto rendimiento global.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ BRAND STORIES ═══════════════════════════════ -->
+  <section id="brand-split">
+    <div class="sec-bar">
+      <span class="sec-bar-left">PROCESO</span>
+      <span class="sec-bar-center"></span>
+      <span class="sec-bar-right">05 — 06</span>
+    </div>
+
+    <div class="bs-text-wrap">
+      <div class="bs-left">
+        <div class="bs-line regular">La Visión</div>
+        <div class="bs-line">Es Solo</div>
+      </div>
+      <div class="bs-right">
+        <div class="bs-line">Sin Acción</div>
+        <div class="bs-line regular">Un Sueño</div>
+      </div>
+    </div>
+
+    <!-- Cards libres, sin caja contenedora con overflow hidden -->
+    <div class="bs-cards-col" id="bsCol">
+      <article class="bs-card">
+        <div class="bs-card-head">
+          <span class="bs-card-label">PROCESS ONE</span>
+          <span class="bs-card-label">VISION</span>
+        </div>
+        <h3 class="bs-card-title"><strong>ESTRATEGIA</strong> PRIMERO</h3>
+        <p class="bs-card-desc">Antes de empezar, definimos la dirección a seguir. Ya sea una identidad, diseño web o
+          automatización, nos aseguramos de resolver el problema correcto.</p>
+      </article>
+
+      <article class="bs-card">
+        <div class="bs-card-head">
+          <span class="bs-card-label">PROCESS TWO</span>
+          <span class="bs-card-label">VISION</span>
+        </div>
+        <h3 class="bs-card-title"><strong>DISEÑO</strong> EN FASES</h3>
+        <p class="bs-card-desc">Trabajamos en ciclos enfocados con revisiones periódicas. Verás el progreso
+          semanalmente, no mensualmente. Sin grandes revelaciones ni sorpresas: solo un impulso constante.</p>
+      </article>
+
+      <article class="bs-card">
+        <div class="bs-card-head">
+          <span class="bs-card-label">PROCESS THREE</span>
+          <span class="bs-card-label">VISION</span>
+        </div>
+        <h3 class="bs-card-title"><strong>LANZAMIENTO</strong></h3>
+        <p class="bs-card-desc">Acompañamos durante la implementación y medimos lo que realmente importa. Cada proyecto
+          nos enseña algo que mejora el siguiente.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT CTA ════════════════════════════════════ -->
+
+  <section id="contact">
+    <div class="cta-bg" id="ctaBg">
+      <img src="img/CTA.webp" alt="" class="cta-bg-img" loading="lazy" decoding="async">
+    </div>
+
+    <!-- STATE 1: Stat view (default) -->
+    <div class="cta-body" id="ctaStatView">
+      <h2 class="cta-number">0%</h2>
+      <p class="cta-stat">DE LAS MARCAS <span class="regular white">FRACASAN SIN VISIÓN</span></p>
+      <a href="#" class="cta-wa" id="bottomContactCta">
+        ¿ ESTARÁS EN EL 95% ?
+      </a>
+    </div>
+
+    <!-- STATE 2: Contact form (hidden, reveals on click) -->
+    <div class="cta-form-state" id="ctaFormState">
+      <div class="cta-form-inner">
+
+        <!-- Back btn — absolute -->
+        <button class="cta-form-back" id="ctaFormBack" aria-label="Volver">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round">
+            <path d="M19 12H5M12 5l-7 7 7 7" />
+          </svg>
+        </button>
+
+        <!-- Centered title -->
+        <h2 class="cta-form-title cf-anim">
+          Hablemos de tu<br><span class="regular">Próximo Proyecto</span>
+        </h2>
+
+        <form class="cta-form-grid" id="ctaContactForm" novalidate>
+
+          <!-- Nombre -->
+          <div class="cta-field-wrap cf-anim">
+            <label class="cta-field-label">Nombre completo*</label>
+            <input type="text" class="cta-field" id="cf-name" placeholder="p. ej. Juan García" required>
+            <div class="cta-field-line"></div>
+          </div>
+
+          <!-- Tipo de proyecto — custom dropdown -->
+          <div class="cta-field-wrap cta-dd-wrap cf-anim" id="dd-type">
+            <label class="cta-field-label">Tipo de proyecto*</label>
+            <div class="cta-dd-selected" tabindex="0">
+              <span class="cta-dd-val">Seleccionar</span>
+              <span class="cta-dd-arrow">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </div>
+            <input type="hidden" id="cf-type">
+            <div class="cta-field-line"></div>
+            <ul class="cta-dd-list" aria-hidden="true">
+              <li class="cta-dd-opt" data-val="Branding">Identidad de Marca</li>
+              <li class="cta-dd-opt" data-val="Web">Desarrollo Web</li>
+              <li class="cta-dd-opt" data-val="UI/UX">Estrategia UI/UX</li>
+              <li class="cta-dd-opt" data-val="IA">Automatización IA</li>
+              <li class="cta-dd-opt" data-val="Combo">Proyecto Integral</li>
+            </ul>
+          </div>
+
+          <!-- Empresa -->
+          <div class="cta-field-wrap cf-anim">
+            <label class="cta-field-label">Empresa / Marca</label>
+            <input type="text" class="cta-field" id="cf-company" placeholder="Nombre de tu empresa">
+            <div class="cta-field-line"></div>
+          </div>
+
+          <!-- Teléfono -->
+          <div class="cta-field-wrap cf-anim">
+            <label class="cta-field-label">Teléfono / WhatsApp*</label>
+            <input type="tel" class="cta-field" id="cf-phone" placeholder="+58 412 000 0000" required>
+            <div class="cta-field-line"></div>
+          </div>
+
+        </form>
+
+        <div class="cta-form-footer cf-anim">
+          <button type="submit" form="ctaContactForm" class="cta-consult-btn nav-cta" id="ctaConsultBtn">
+            SOLICITAR CONSULTA
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="sec-bar">
+      <span class="sec-bar-left">FAQ</span>
+      <span class="sec-bar-center"></span>
+      <span class="sec-bar-right">06 — 06</span>
+    </div>
+    <div class="faq-inner">
+      <div class="faq-left">
+        <h2 class="faq-title"><span class="line"><span class="line-inner"><span class="regular">Dudas</span> en la
+              Vision?</span></span></h2>
+      </div>
+      <div class="faq-list" id="faqList">
+        <div class="faq-item">
+          <button class="faq-btn">
+            <span class="faq-q">¿Cómo arranca un proyecto con BLCK VISION?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body">
+            <div class="faq-body-inner">
+              <p>Comienza con una llamada de descubrimiento donde entendemos tus objetivos, audiencia y visión. A partir
+                de ahí, definimos un plan de acción claro con entregables y plazos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn">
+            <span class="faq-q">¿Cuánto tarda en entregarse un proyecto?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body">
+            <div class="faq-body-inner">
+              <p>Depende del alcance. Una identidad de marca toma 1–2 semanas; un desarrollo web completo entre 3 y 6
+                semanas. Siempre definimos tiempos claros al inicio.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn">
+            <span class="faq-q">¿Por qué BLCK VISION cobra más que otras agencias?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body">
+            <div class="faq-body-inner">
+              <p>Porque no vendemos horas, vendemos resultados. Cada proyecto está construido con estrategia, precisión
+                visual y tecnología de alto rendimiento que genera retorno real.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn">
+            <span class="faq-q">¿Pueden hacer solo identidad, solo web o solo automatización?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body">
+            <div class="faq-body-inner">
+              <p>Sí. Cada servicio funciona de manera independiente, pero también se potencian cuando se combinan.
+                Puedes empezar con lo que necesites ahora y escalar después.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn">
+            <span class="faq-q">¿Hacen mantenimiento después de entregar?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-body">
+            <div class="faq-body-inner">
+              <p>Ofrecemos soporte post-lanzamiento y podemos acompañarte en el crecimiento continuo. Muchos clientes
+                nos eligen como socio estratégico a largo plazo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ════════════════════════════════════════ -->
+
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="ftr-inner">
+      <div class="ftr-left">
+        <div class="ftr-logo"><img class="ftr-logo-img" src="img/Logotipo o.png" alt="BLCK VISION"></div>
+        <p class="ftr-tagline">Infraestructura inteligente para empresas que no pueden permitirse más fricción.</p>
+      </div>
+      <nav class="ftr-nav">
+        <a href="#services" class="ftr-nav-link">Servicios</a>
+        <a href="#" class="ftr-nav-link">Nosotros</a>
+        <a href="#entregamos" class="ftr-nav-link">Proyectos</a>
+        <a href="#contact" class="ftr-nav-link">Contacto</a>
+      </nav>
+    </div>
+    <div class="ftr-watermark">VISION</div>
+  </footer>
+
+  <!-- ══ UNIVERSAL PAGE OVERLAY ════════════════════════ -->
+  <div id="page-overlay" class="page-overlay">
+    <div class="overlay-bg" id="overlay-bg"></div>
+    <div class="overlay-content-wrap" id="overlay-content-wrap">
+      <div class="overlay-content" id="overlay-content-area"></div>
+    </div>
+    <button class="overlay-close" id="overlay-close-btn">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+        stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+
+  <!-- ══ OVERLAY TEMPLATES ═════════════════════════════ -->
+  <template id="tpl-contact">
+    <section id="pg-hero-contact">
+      <div class="pg-contact-inner">
+        <div class="pg-contact-left">
+          <h1 class="pg-title">
+            <span class="pg-line"><span class="pg-line-inner">Inicia</span></span>
+            <span class="pg-line"><span class="pg-line-inner">Tu</span></span>
+            <span class="pg-line"><span class="pg-line-inner">Legado</span></span>
+          </h1>
+          <p class="pg-subtext">Cada gran proyecto comienza con una conversación precisa.</p>
+
+          <div class="pg-contact-details">
+            <div class="pg-contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              <span>+58 412 123 4567</span>
+            </div>
+            <div class="pg-contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <span>hello@blckvision.com</span>
+            </div>
+          </div>
+
+          <div class="pg-contact-meta">
+            <div class="pg-meta-block">
+              <span class="pg-meta-label">UBICACIÓN</span>
+              <span class="pg-meta-value">Venezuela / Remoto</span>
+            </div>
+            <div class="pg-meta-block">
+              <span class="pg-meta-label">FUNDADOR</span>
+              <span class="pg-meta-value">BLCK VISION, Founder & Creative Strategist</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pg-contact-right">
+          <div class="pg-form-wrapper">
+            <h2 class="pg-form-title">Trabajemos juntos</h2>
+            <form class="pg-form" id="overlayContactForm">
+              <div class="pg-input-group">
+                <input type="text" id="ov-name" placeholder=" " required>
+                <label for="ov-name">Nombre completo*</label>
+                <div class="pg-input-border"></div>
+              </div>
+              <div class="pg-input-group">
+                <input type="email" id="ov-email" placeholder=" " required>
+                <label for="ov-email">Email*</label>
+                <div class="pg-input-border"></div>
+              </div>
+              <div class="pg-input-group">
+                <textarea id="ov-message" rows="4" placeholder=" "></textarea>
+                <label for="ov-message">Mensaje</label>
+                <div class="pg-input-border"></div>
+              </div>
+              <button type="submit" class="pg-submit-btn">
+                ENVIAR MENSAJE
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </template>
+
+  <template id="tpl-project">
+    <section class="pg-project-detail"
+      style="padding: 180px 60px 80px; min-height: 100vh; background: #000; color:#fff;">
+      <div style="max-width: 1300px; margin: 0 auto;">
+        <h1 class="pg-title" style="font-size: 5rem; margin-bottom: 24px;">DETALLES DEL PROYECTO</h1>
+        <p class="pg-subtext" style="max-width: 800px; font-size: 1.2rem;">
+          Aquí puedes mostrar el case study completo del proyecto sin tener que abrir una nueva pestaña. Toda la
+          experiencia de usuario se mantiene fluida y rápida en la misma página principal.
+        </p>
+
+        <div
+          style="margin-top: 60px; width: 100%; height: 60vh; background: #090909; border: 1px solid rgba(255,255,255,0.05); border-radius: 20px; display:flex; align-items:center; justify-content:center;">
+          <span style="color:rgba(255,255,255,0.3); font-family:'ML'; letter-spacing:2px;">MOCKUP / GALERÍA DEL
+            PROYECTO</span>
+        </div>
+      </div>
+    </section>
+  </template>
+
+  <!-- ══ SCRIPTS ════════════════════════════════════════ -->
+  <script src="main.js"></script>
+  <script src="projects.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Identidad Visual — BLCK VISION</title>
+  <meta name="description"
+    content="Sistemas de identidad visual completos. Estrategia, visual, voz y aplicación. Todo lo que una marca necesita para ser reconocida, recordada y elegida." />
+
+  <!-- GSAP + Lenis -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/CustomEase.min.js"></script>
+
+  <!-- CSS — paths relative to blck/services/ -->
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../pages.css">
+  <link rel="stylesheet" href="../services.css">
+  <link rel="stylesheet" href="../projects.css">
+  <link rel="stylesheet" href="identidad.css">
+</head>
+
+<body class="page-body page-identidad">
+
+  <!-- ══ PRELOADER ══════════════════════════════════════════ -->
+  <div id="preloader">
+    <div class="pre-word">
+      <span class="pre-letter">B</span><span class="pre-letter">L</span><span class="pre-letter">C</span><span
+        class="pre-letter">K</span>
+      <span class="pre-letter" style="width:.45em;display:inline-block;flex-shrink:0"></span>
+      <span class="pre-letter script">V</span><span class="pre-letter script">I</span><span
+        class="pre-letter script">S</span><span class="pre-letter script">I</span><span
+        class="pre-letter script">O</span><span class="pre-letter script">N</span>
+    </div>
+  </div>
+
+  <!-- ══ CURSOR ════════════════════════════════════════════= -->
+  <div id="cursor"></div>
+
+  <!-- ══ NAVBAR ════════════════════════════════════════════= -->
+  <nav id="navbar">
+    <div class="nav-left">
+      <a href="../index.html" class="nav-link">INICIO</a>
+    </div>
+    <div class="nav-links">
+      <a href="../index.html#trust" class="nav-link">NOSOTROS</a>
+      <a href="../index.html#services" class="nav-link">SERVICIOS</a>
+      <a href="../index.html#entregamos" class="nav-link">PROYECTOS</a>
+    </div>
+    <div class="nav-right">
+      <a href="#" class="nav-cta" id="identCtaCta">
+        CONTACTAR
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <path d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ══ HERO ═════════════════════════════════════════════= -->
+  <section id="srv-hero">
+
+    <!-- Background image only — no overlays, no isotipo -->
+    <div class="srv-hero-bg">
+      <img src="../img/srv_identidad1.webp" alt="Identidad Visual BLCK VISION" loading="eager" decoding="async">
+    </div>
+
+    <!-- Top bar -->
+    <div class="sec-bar srv-hero-topbar">
+      <span class="sec-bar-left">IDENTIDAD VISUAL</span>
+      <span class="sec-bar-center"></span>
+      <span class="sec-bar-right">19 — 26</span>
+    </div>
+
+    <!-- Bottom content: 2-column grid — title col LEFT, desc col RIGHT -->
+    <div class="srv-hero-bottom">
+
+      <!-- LEFT: title, aligned to bottom left -->
+      <div class="srv-hero-title-col">
+        <h1 class="srv-hero-title">
+          <span class="line"><span class="line-inner">MARCAS QUE <strong>DOMINAN</strong></span></span>
+          <span class="line"><span class="line-inner">SU <strong>MERCADO</strong></span></span>
+        </h1>
+      </div>
+
+      <!-- RIGHT: description, centered vertically in its column -->
+      <div class="srv-hero-desc-col">
+        <p class="srv-hero-desc">
+          CONSTRUCCIÓN DE SISTEMAS DE IDENTIDAD COMPLETOS.
+          ESTRATEGIA, VISUAL, VOZ Y APLICACIÓN. <strong>TODO LO QUE UNA
+            MARCA NECESITA</strong> PARA SER RECONOCIDA, RECORDADA Y
+          ELEGIDA.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ══ DELIVERABLES ═══════════════════════════════════════ -->
+  <section id="srv-deliverables" class="grain">
+
+    <div class="sec-bar dlv-bar">
+      <span class="sec-bar-left">ENTREGABLES</span>
+      <span class="sec-bar-center"></span>
+      <span class="sec-bar-right">01 — 03</span>
+    </div>
+
+    <div class="dlv-inner">
+
+      <div class="dlv-header">
+        <h2 class="dlv-title">
+          <span class="dlv-thin">Una </span><strong>Identidad Completa,</strong><br>
+          No un Logo.
+        </h2>
+      </div>
+
+      <div class="dlv-list">
+
+        <div class="dlv-item" data-dlv>
+          <span class="dlv-num">01</span>
+          <div class="dlv-content">
+            <button class="dlv-btn">
+              <span class="dlv-name">Estrategia de Marca</span>
+              <span class="dlv-icon">+</span>
+            </button>
+            <div class="dlv-body">
+              <div class="dlv-body-inner">
+                <p class="dlv-desc">Sabrás exactamente qué hace única a tu marca y cómo comunicarlo. Tendrás una
+                  dirección clara antes de invertir un peso en diseño.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dlv-item" data-dlv>
+          <span class="dlv-num">02</span>
+          <div class="dlv-content">
+            <button class="dlv-btn">
+              <span class="dlv-name">Brandbook Completo</span>
+              <span class="dlv-icon">+</span>
+            </button>
+            <div class="dlv-body">
+              <div class="dlv-body-inner">
+                <p class="dlv-desc">Tu equipo, tus proveedores y tus clientes verán siempre la misma marca. Sin
+                  versiones desactualizadas ni interpretaciones libres.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dlv-item" data-dlv>
+          <span class="dlv-num">03</span>
+          <div class="dlv-content">
+            <button class="dlv-btn">
+              <span class="dlv-name">Aplicaciones &amp; Mockups</span>
+              <span class="dlv-icon">+</span>
+            </button>
+            <div class="dlv-body">
+              <div class="dlv-body-inner">
+                <p class="dlv-desc">Verás tu marca viva antes de lanzar. Tarjetas, redes, packaging — todo listo para
+                  usar el día uno.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ BRANDING PROJECTS (SLIDER) ══════════════════════════════════ -->
+  <section id="entregamos" style="position: relative; width: 100%; height: 100vh; overflow: hidden; background: #000;">
+
+    <div class="sec-bar" style="position: absolute; top: 0; left: 0; width: 100%; z-index: 99;">
+      <span class="sec-bar-left">PROYECTOS</span>
+      <span class="sec-bar-center"></span>
+      <span class="sec-bar-right">02 — 03</span>
+    </div>
+
+    <!-- BOTÓN VOLVER (fijo, oculto por defecto) -->
+    <div class="back-btn hover-target" id="back-to-slider">
+      <span>VOLVER</span>
+    </div>
+
+    <!-- WIDGET CONTRATAR FIJO -->
+    <div class="glass-widget-wrapper hover-target" id="hire-widget">
+      <div class="glass-widget">
+        <div class="widget-text">INICIAR PROYECTO</div>
+        <div class="widget-arrow">&#8594;</div>
+      </div>
+    </div>
+
+    <!-- UI: Barra inferior -->
+    <div class="ui-layer bottom-bar" id="ui-bottom" style="display:none">
+      <div></div>
+      <div id="slide-counter">01 &mdash; 05</div>
+    </div>
+
+    <!-- VISTA PROYECTO (detrás del slider) -->
+    <div id="project-view" data-lenis-prevent="true">
+      <div class="proj-hero-wrapper">
+        <img class="proj-hero" id="proj-main-img" src="" alt="Imagen del Proyecto">
+      </div>
+
+      <!-- Barra de título 20vh -->
+      <div class="proj-title-bar" id="proj-title-bar">
+        <h2 class="title-bar-title stagger-elem" id="proj-display-title">Nombre del Proyecto</h2>
+      </div>
+
+      <!-- Sección descripción -->
+      <div class="project-header" id="proj-header-area">
+        <div class="project-metadata stagger-elem">
+          <div class="meta-col">
+            <h4>UNA COLABORACIÓN CON</h4>
+            <p id="proj-client">Cliente</p><br>
+            <h4>CAPACIDADES</h4>
+            <p id="proj-caps">Capacidades</p>
+          </div>
+          <div class="meta-col desc">
+            <p id="proj-desc">Descripción</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-images" id="proj-images-container">
+        <div class="img-full"><img id="proj-img-2" alt="Imagen 2"></div>
+        <div class="img-full"><img id="proj-img-3" alt="Imagen 3"></div>
+        <div class="img-full"><img id="proj-img-4" alt="Imagen 4"></div>
+        <div class="img-full"><img id="proj-img-5" alt="Imagen 5"></div>
+        <div class="img-full"><img id="proj-img-6" alt="Imagen 6"></div>
+        <div class="img-full"><img id="proj-img-7" alt="Imagen 7"></div>
+        <div class="img-full"><img id="proj-img-8" alt="Imagen 8"></div>
+      </div>
+
+      <!-- PIE DE PÁGINA -->
+      <div class="cta-wrapper" id="proj-footer">
+        <div class="cta-section gs-reveal">
+          <div class="discover-more">
+            <div class="discover-grid" id="discover-grid" style="margin-bottom: 40px;"></div>
+            <div style="text-align: left;">
+              <button class="btn-ver-mas hover-target">VER MÁS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDER HERO (capa frontal) -->
+    <div id="slider-view" class="hover-target">
+      <div class="main-image-container" id="main-slider">
+        <div class="slider-track" id="main-slider-track"></div>
+      </div>
+      <div class="slider-blur-overlay"></div>
+      <div class="thumbnails-box" id="thumb-wrapper">
+        <div class="thumb-track" id="thumb-track"></div>
+      </div>
+      <div class="center-line-fixed" id="center-line"></div>
+    </div>
+
+  </section>
+
+  <!-- ══ PROCESS ════════════════════════════════════════════ -->
+  <section id="srv-process" class="grain">
+    <div class="sec-bar proc-bar">
+      <span class="sec-bar-left">METODOLOGÍA</span>
+      <span class="sec-bar-center"></span>
+      <span class="sec-bar-right">03 — 03</span>
+    </div>
+    <div class="proc-inner">
+      <div class="proc-left">
+        <h2 class="proc-title">
+          <span style="font-family: 'ML', sans-serif;">PROCESO DE</span><br>
+          <span style="font-family: 'MR', sans-serif;">DISEÑO</span>
+        </h2>
+      </div>
+      <div class="proc-right">
+
+        <div class="proc-item" data-proc>
+          <button class="proc-btn">
+            <span class="proc-name">Descubrimiento y Análisis</span>
+            <span class="proc-dur">1 SEMANA</span>
+          </button>
+          <div class="proc-body">
+            <div class="proc-body-inner">
+              <p class="proc-desc">Investigación de mercado, análisis de competencia, entrevistas y definición de
+                audiencia. La base estratégica de todo.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="proc-item" data-proc>
+          <button class="proc-btn">
+            <span class="proc-name">Estrategia y Dirección</span>
+            <span class="proc-dur">1 SEMANA</span>
+          </button>
+          <div class="proc-body">
+            <div class="proc-body-inner">
+              <p class="proc-desc">Posicionamiento, moodboard, arquetipo y voz de marca. La dirección visual aprobada
+                antes de diseñar.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="proc-item" data-proc>
+          <button class="proc-btn">
+            <span class="proc-name">Diseño y Sistema</span>
+            <span class="proc-dur">1 — 2 SEMANAS</span>
+          </button>
+          <div class="proc-body">
+            <div class="proc-body-inner">
+              <p class="proc-desc">Exploración de logotipos, sistema de color, tipografía e iteraciones hasta la
+                aprobación final.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="proc-item" data-proc>
+          <button class="proc-btn">
+            <span class="proc-name">Entrega y Aplicación</span>
+            <span class="proc-dur">1 SEMANA</span>
+          </button>
+          <div class="proc-body">
+            <div class="proc-body-inner">
+              <p class="proc-desc">Brandbook completo, mockups, archivos fuente y sesión de handoff. Tu identidad lista
+                para operar.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT CTA ════════════════════════════════════ -->
+  <section id="contact">
+    <div class="cta-bg" id="ctaBg">
+      <img src="../img/srv_identidad.png" alt="" class="cta-bg-img" loading="lazy" decoding="async">
+    </div>
+
+    <!-- STATE 1: Stat view (default) -->
+    <div class="cta-body" id="ctaStatView">
+      <h2 class="cta-number" data-target="82">0%</h2>
+      <p class="cta-stat">DE LAS DECISIONES DE COMPRA <span class="regular white">SON EMOCIONALES</span></p>
+      <a href="https://wa.me/584121234567?text=Hola%2C%20quiero%20iniciar%20un%20proyecto%20de%20Identidad%20Visual%20con%20BLCK%20VISION"
+        class="cta-wa" id="bottomContactCta" target="_blank" rel="noopener">
+        ¿ TU MARCA EMOCIONA ?
+      </a>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ════════════════════════════════════════════= -->
+  <footer id="footer">
+    <div class="ftr-inner">
+      <div class="ftr-left">
+        <div class="ftr-logo"><img class="ftr-logo-img" src="../img/Logotipo o.png" alt="BLCK VISION"></div>
+        <p class="ftr-tagline">Infraestructura inteligente para empresas que no pueden permitirse más fricción.</p>
+      </div>
+      <nav class="ftr-nav">
+        <a href="../index.html#services" class="ftr-nav-link">Servicios</a>
+        <a href="../index.html" class="ftr-nav-link">Nosotros</a>
+        <a href="../index.html#entregamos" class="ftr-nav-link">Proyectos</a>
+        <a href="../contact.html" class="ftr-nav-link">Contacto</a>
+      </nav>
+    </div>
+    <div class="ftr-watermark">VISION</div>
+  </footer>
+
+  <!-- ══ SCRIPTS ════════════════════════════════════════════ -->
+  <script src="../pages.js"></script>
+  <script>window.PROJECTS_FILTER = 'IDENTIDAD VISUAL';</script>
+  <script src="../projects.js"></script>
+  <script>
+    /* ── Nav CTA → WhatsApp ──────────────────────────────── */
+    var identCtaCta = document.getElementById('identCtaCta');
+    if (identCtaCta) {
+      identCtaCta.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.open(
+          'https://wa.me/584121234567?text=Hola%2C%20quiero%20iniciar%20un%20proyecto%20de%20Identidad%20Visual%20con%20BLCK%20VISION',
+          '_blank', 'noopener'
+        );
+      });
+    }
+
+    /* ── Accordion: Deliverables (all start collapsed) ───── */
+    document.querySelectorAll('[data-dlv] .dlv-btn').forEach(function (btn) {
+      var body = btn.parentElement.querySelector('.dlv-body');
+      var icon = btn.querySelector('.dlv-icon');
+
+      /* All items start collapsed */
+      gsap.set(body, { height: 0, overflow: 'hidden' });
+
+      btn.addEventListener('click', function () {
+        var alreadyOpen = btn.classList.contains('open');
+        /* Close any currently open item */
+        document.querySelectorAll('[data-dlv] .dlv-btn.open').forEach(function (ob) {
+          ob.classList.remove('open');
+          ob.querySelector('.dlv-icon').textContent = '+';
+          gsap.to(ob.parentElement.querySelector('.dlv-body'), {
+            height: 0,
+            duration: 0.45,
+            ease: 'power3.inOut',
+            onComplete: function () { ScrollTrigger.refresh(); }
+          });
+        });
+        /* Open the clicked one if it wasn't already open */
+        if (!alreadyOpen) {
+          btn.classList.add('open');
+          icon.textContent = '—';
+          gsap.to(body, {
+            height: 'auto',
+            duration: 0.5,
+            ease: 'power3.out',
+            onComplete: function () { ScrollTrigger.refresh(); }
+          });
+        }
+      });
+    });
+
+    /* ── Accordion: Process ──────────────────────────────── */
+    document.querySelectorAll('[data-proc] .proc-btn').forEach(function (btn) {
+      var body = btn.parentElement.querySelector('.proc-body');
+      gsap.set(body, { height: 0, overflow: 'hidden' });
+      btn.addEventListener('click', function () {
+        var isOpen = btn.classList.contains('open');
+        document.querySelectorAll('[data-proc] .proc-btn.open').forEach(function (ob) {
+          ob.classList.remove('open');
+          gsap.to(ob.parentElement.querySelector('.proc-body'), {
+            height: 0,
+            duration: 0.4,
+            ease: 'power3.inOut',
+            onComplete: function () { ScrollTrigger.refresh(); }
+          });
+        });
+        if (!isOpen) {
+          btn.classList.add('open');
+          gsap.to(body, {
+            height: 'auto',
+            duration: 0.5,
+            ease: 'power3.out',
+            onComplete: function () { ScrollTrigger.refresh(); }
+          });
+        }
+      });
+    });
+
+    /* ── Metrics counter ─────────────────────────────────── */
+    function animateCount(el) {
+      var target = parseInt(el.dataset.target, 10);
+      if (isNaN(target)) return;
+      var obj = { val: 0 };
+      gsap.to(obj, {
+        val: target, duration: 2.2, ease: 'power2.out', delay: 0.6,
+        onUpdate: function () { el.textContent = Math.round(obj.val); }
+      });
+    }
+
+    /* ── GSAP ScrollTrigger animations ──────────────────── */
+    (function () {
+      gsap.registerPlugin(ScrollTrigger);
+
+      /* ── Hero entrance ─────────────────────────────────── */
+      document.querySelectorAll('#srv-hero .line-inner').forEach(function (el) {
+        gsap.set(el, { y: '105%' });
+      });
+      gsap.set('#srv-hero .srv-hero-mark', { opacity: 0, scale: 0.85 });
+      gsap.set('#srv-hero .srv-hero-desc', { opacity: 0, y: 20 });
+
+      function revealHero() {
+        gsap.timeline({ delay: 0.15 })
+          .to('#srv-hero .srv-hero-mark', { opacity: 1, scale: 1, duration: 1.2, ease: 'power3.out' })
+          .to('#srv-hero .line-inner', { y: '0%', duration: 1.1, stagger: 0.1, ease: 'power4.out' }, '-=0.8')
+          .to('#srv-hero .srv-hero-desc', { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out' }, '-=0.6');
+      }
+
+      if (typeof preloaderDone !== 'undefined' && preloaderDone) { revealHero(); }
+      else if (typeof pageRevealQueue !== 'undefined') { pageRevealQueue.push(revealHero); }
+      else { window.addEventListener('load', revealHero); }
+
+      /* ── Deliverables stagger entrance ─────────────────── */
+      gsap.set('.dlv-header', { opacity: 0, y: 40 });
+      gsap.set('[data-dlv]', { opacity: 0, y: 28 });
+      ScrollTrigger.create({
+        trigger: '#srv-deliverables', start: 'top 90%', once: true,
+        onEnter: function () {
+          gsap.timeline()
+            .to('.dlv-header', { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out' })
+            .to('[data-dlv]', { opacity: 1, y: 0, duration: 0.7, stagger: 0.1, ease: 'power3.out' }, '-=0.5');
+        }
+      });
+
+      /* ── Branding projects stagger entrance ─────────────── */
+      gsap.set('.bprj-card', { opacity: 0, y: 30 });
+      ScrollTrigger.create({
+        trigger: '#srv-branding-projects', start: 'top 90%', once: true,
+        onEnter: function () {
+          gsap.to('.bprj-card', { opacity: 1, y: 0, duration: 0.9, stagger: 0.12, ease: 'power3.out' });
+        }
+      });
+
+      /* ── Process stagger entrance ────────────────────────── */
+      gsap.set('.proc-left', { opacity: 0, x: -40 });
+      gsap.set('[data-proc]', { opacity: 0, y: 20 });
+      ScrollTrigger.create({
+        trigger: '#srv-process', start: 'top 90%', once: true,
+        onEnter: function () {
+          gsap.timeline()
+            .to('.proc-left', { opacity: 1, x: 0, duration: 1, ease: 'power3.out' })
+            .to('[data-proc]', { opacity: 1, y: 0, duration: 0.65, stagger: 0.1, ease: 'power3.out' }, '-=0.7');
+        }
+      });
+
+
+
+
+      /* ── Sec-bars stagger ────────────────────────────────── */
+      document.querySelectorAll('.sec-bar-left, .sec-bar-right').forEach(function (el) {
+        gsap.set(el, { opacity: 0, y: 8 });
+        ScrollTrigger.create({
+          trigger: el, start: 'top 92%', once: true,
+          onEnter: function () { gsap.to(el, { opacity: 1, y: 0, duration: 0.55, ease: 'power3.out' }); }
+        });
+      });
+
+
+      window.addEventListener('load', function () {
+        ScrollTrigger.sort();
+        ScrollTrigger.refresh();
+      });
+
+    })();
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,433 @@
+/* ══════════════════════════════════════════════════════
+   automatizacion.css — Automatización IA page
+   Path: blck/services/automatizacion.css
+   ══════════════════════════════════════════════════════ */
+
+/* ── Hero sec-bar: pinned to top like index.html ───── */
+.page-automatizacion .srv-hero-topbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0;
+  padding-top: 40px;
+}
+
+/* ── Hero: Process.jpg only, no extra overlays ────────── */
+.page-automatizacion #srv-hero {
+  background: #000;
+  /* fallback while image loads */
+  padding: 80px 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Image: full cover, no blend / opacity tweaks */
+.page-automatizacion .srv-hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  opacity: 1;
+  mix-blend-mode: normal;
+}
+
+/* Gradient overlay kept minimal — just enough for text legibility at the bottom */
+.page-automatizacion .srv-hero-gradient {
+  background: linear-gradient(to bottom,
+      transparent 0%,
+      transparent 55%,
+      rgba(0, 0, 0, 0.65) 80%,
+      rgba(0, 0, 0, 0.92) 100%);
+}
+
+/* Kill the glow and side fades — clean image only */
+.page-automatizacion .srv-hero-purple-glow {
+  display: none;
+}
+
+.page-automatizacion .srv-hero-sides {
+  display: none;
+}
+
+/* ── Hero bottom: 2-column grid — desc LEFT col, title RIGHT col ── */
+.page-automatizacion .srv-hero-bottom {
+  position: relative;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  /* both columns align to the bottom edge */
+  gap: 40px;
+  width: 100%;
+}
+
+/* LEFT column: title aligned to bottom left */
+.page-automatizacion .srv-hero-title-col {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+/* RIGHT column: description centered vertically in its half */
+.page-automatizacion .srv-hero-desc-col {
+  display: flex;
+  align-items: center;
+  /* center desc vertically in column */
+  justify-content: flex-end;
+  padding-bottom: 4px;
+}
+
+/* Title — LEFT side, exactly 2.5rem, left-aligned */
+.page-automatizacion .srv-hero-title {
+  font-family: 'ML', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  color: #fff;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-align: left;
+}
+
+.page-automatizacion .srv-hero-title strong {
+  font-family: 'MR', sans-serif;
+  font-weight: 400;
+}
+
+.page-automatizacion .srv-hero-title .line {
+  display: block;
+  overflow: hidden;
+}
+
+.page-automatizacion .srv-hero-title .line-inner {
+  display: block;
+}
+
+/* Description — RIGHT side, small caps, faded */
+.page-automatizacion .srv-hero-desc {
+  font-family: 'ML', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: rgba(255, 255, 255, .5);
+  line-height: 1.7;
+  max-width: 90%;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+.page-automatizacion .srv-hero-desc strong {
+  color: rgba(255, 255, 255, .68);
+  font-family: 'MR', sans-serif;
+  font-weight: 300;
+}
+
+/* ── Deliverables: accordion restored ───────────────── */
+.page-automatizacion #srv-deliverables {
+  background: linear-gradient(180deg, #000 0%, transparent 50%, transparent 85%, #000 100%), linear-gradient(90deg, #090909 0%, #000000 15%, #000000 85%, #090909 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Item 01 — visually shown "open" by default via these helper classes */
+.page-automatizacion .dlv-btn-open .dlv-icon {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, .8);
+}
+
+.page-automatizacion .dlv-body-open {
+  height: auto !important;
+  overflow: visible !important;
+}
+
+/* Remove borders from sec-bars and main section containers, keeping internal item borders intact */
+.page-automatizacion .sec-bar,
+.page-automatizacion .dlv-bar,
+.page-automatizacion .bprj-bar,
+.page-automatizacion .proc-bar,
+.page-automatizacion .mtr-bar,
+.page-automatizacion #srv-branding-projects,
+.page-automatizacion #srv-metrics,
+.page-automatizacion #srv-process,
+.page-automatizacion #srv-deliverables {
+  border: none !important;
+}
+
+/* Adjust deliverables typography (smaller per request) */
+.page-automatizacion .dlv-title {
+  font-size: 2.5rem;
+}
+
+.page-automatizacion .dlv-name {
+  font-size: clamp(1rem, 1.8vw, 1.3rem);
+}
+
+.page-automatizacion .dlv-desc {
+  font-size: 0.8rem;
+}
+
+/* ── Projects: 100vh container, grid 80vh vertically centered ── */
+.page-automatizacion #srv-branding-projects {
+  height: 100vh;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-automatizacion .bprj-grid {
+  height: 75vh;
+  flex-shrink: 0;
+}
+
+/* ── Process ──────────────────────────────────────────── */
+.page-automatizacion #srv-process {
+  background: linear-gradient(180deg, #000 0%, transparent 15%, transparent 85%, #000 100%), linear-gradient(90deg, #090909 0%, #000000 15%, #000000 85%, #090909 100%);
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-automatizacion .proc-title {
+  font-size: 2.5rem;
+  line-height: 1.05;
+}
+
+/* ── Metrics: centered text per column ───────────────── */
+.page-automatizacion #srv-metrics {
+  background: linear-gradient(180deg, #000 0%, transparent 15%, transparent 85%, #000 100%), linear-gradient(90deg, #090909 0%, #000000 15%, #000000 85%, #090909 100%);
+  height: 100vh;
+  min-height: 100vh;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-automatizacion .mtr-grid {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.page-automatizacion .mtr-stat {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px;
+  border-right: 1px solid rgba(255, 255, 255, .06);
+}
+
+.page-automatizacion .mtr-stat:first-child {
+  padding-left: 0;
+}
+
+.page-automatizacion .mtr-stat:last-child {
+  border-right: none;
+}
+
+.page-automatizacion .mtr-num {
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.page-automatizacion .mtr-label {
+  font-family: 'ML', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, .32);
+  line-height: 1.65;
+  text-align: center;
+}
+
+/* ── CTA: Redesigned ──────────────────── */
+.automatizacion-cta-section {
+  background: #000;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0 40px;
+}
+
+.automatizacion-cta-section .cta-body {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  max-width: 600px;
+}
+
+.automatizacion-cta-section .cta-title {
+  font-family: 'ML', sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: #fff;
+}
+
+.automatizacion-cta-section .cta-desc {
+  font-family: 'ML', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 200;
+  color: rgba(255, 255, 255, .45);
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.automatizacion-cta-section .cta-btn {
+  margin-top: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  color: #000;
+  padding: 12px 32px;
+  border-radius: 100px;
+  font-family: 'ML', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  transition: transform 0.3s ease;
+}
+
+.automatizacion-cta-section .cta-btn span {
+  transition: transform 0.3s ease;
+}
+
+.automatizacion-cta-section .cta-btn:hover {
+  transform: scale(1.03);
+}
+
+.automatizacion-cta-section .cta-btn:hover span {
+  transform: translateX(4px);
+}
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 900px) {
+  .page-automatizacion #srv-hero {
+    padding: 0 24px 48px;
+  }
+
+  .page-automatizacion .srv-hero-bottom {
+    flex-direction: column-reverse;
+    /* mobile: title on top, desc below */
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .page-automatizacion .srv-hero-title {
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  .page-automatizacion .srv-hero-desc {
+    max-width: 100%;
+  }
+
+  .page-automatizacion .bprj-grid {
+    height: 70vh;
+  }
+
+  .page-automatizacion #srv-metrics {
+    padding: 60px 24px;
+  }
+
+  .page-automatizacion .mtr-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .page-automatizacion .mtr-stat {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .06);
+    padding: 0 0 40px;
+  }
+
+  .page-automatizacion .mtr-stat:last-child {
+    border-bottom: none;
+  }
+}
+
+.page-automatizacion .srv-hero-desc {
+  font-family: 'ML', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: rgba(255, 255, 255, .5);
+  line-height: 1.7;
+  max-width: 90%;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+.page-automatizacion .dlv-title {
+  font-size: 2rem;
+}
+
+.page-automatizacion .dlv-name {
+  font-size: 1.4rem;
+}
+
+.page-automatizacion .dlv-desc {
+  font-size: 0.9rem;
+}
+
+.automatizacion-cta-section .cta-title {
+  font-family: 'ML', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: #fff;
+}
+
+.automatizacion-cta-section .cta-body {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  max-width: 55%;
+}
+
+.automatizacion-cta-section .cta-desc {
+  font-family: 'ML', sans-serif;
+  font-size: 0.97rem;
+  font-weight: 200;
+  color: rgba(255, 255, 255, .45);
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+}
+
+.page-automatizacion .mtr-label {
+  font-family: 'ML', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, .32);
+  line-height: 1.65;
+  text-align: center;
+}
