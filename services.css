@@ -15,6 +15,15 @@
       #000 100%);
 }
 
+#srv-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(to top, #000 0%, transparent 40%);
+  pointer-events: none;
+}
+
 .srv-hero-bg {
   position: absolute;
   inset: 0;

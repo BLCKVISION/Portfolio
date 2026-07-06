@@ -577,3 +577,138 @@ padding-bottom: 30px;
   opacity: 1;
   transform: scale(1.05);
 }
+
+/* ══ RESPONSIVE OVERRIDES (MOBILE & TABLET) ════════════ */
+@media (max-width: 768px) {
+  /* Slider View */
+  #slider-view {
+    height: 100vh !important;
+  }
+  
+  .thumbnails-box {
+    display: none !important; /* Hide thumbnails on mobile */
+  }
+  
+  .center-line-fixed {
+    display: none !important; /* Hide center line on mobile */
+  }
+  
+  .bottom-bar {
+    left: 20px !important;
+    right: 20px !important;
+    bottom: 20px !important;
+  }
+
+  /* Project View (Case Study Details) */
+  #project-view {
+    padding-bottom: 0 !important;
+  }
+  
+  .proj-hero-wrapper {
+    height: 60vh !important;
+  }
+  
+  .proj-title-bar {
+    height: auto !important;
+    padding: 40px 20px !important;
+  }
+  
+  .title-bar-title {
+    font-size: 2.2rem !important;
+    letter-spacing: -1px !important;
+  }
+  
+  .project-header {
+    padding: 40px 20px 60px !important;
+    min-height: auto !important;
+  }
+  
+  .project-metadata {
+    margin-left: 0 !important;
+    flex-direction: column !important;
+    gap: 32px !important;
+  }
+  
+  .meta-col {
+    width: 100% !important;
+  }
+  
+  .meta-col.desc {
+    max-width: 100% !important;
+    font-size: 1.1rem !important;
+  }
+
+  /* Project Images Grid */
+  .img-split {
+    flex-direction: column !important;
+    height: auto !important;
+    gap: 4px !important;
+  }
+  
+  .img-split .half {
+    width: 100% !important;
+    height: 50vh !important;
+  }
+  
+  .img-split .half img {
+    height: 100% !important;
+    transform: none !important;
+  }
+
+  /* Discover More */
+  .discover-more {
+    margin-top: 80px !important;
+    padding-top: 30px !important;
+  }
+  
+  .discover-more h3 {
+    font-size: 1.8rem !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .discover-grid {
+    grid-template-columns: 1fr !important; /* Stack columns on mobile */
+    gap: 16px !important;
+  }
+  
+  .card {
+    height: 220px !important;
+  }
+  
+  .card-title {
+    font-size: 1.5rem !important;
+  }
+
+  /* Hire Widget Fijo */
+  .glass-widget-wrapper {
+    bottom: 3vh !important;
+  }
+  
+  .glass-widget {
+    width: 60px !important;
+    padding: 10px !important;
+  }
+  
+  .glass-widget:hover {
+    width: 180px !important;
+    padding: 10px 16px !important;
+  }
+  
+  .glass-widget:hover .widget-text {
+    max-width: 120px !important;
+  }
+
+  /* Back Button */
+  .back-btn {
+    top: auto !important;
+    bottom: 3vh !important;
+    right: 20px !important;
+    transform: none !important;
+    padding: 0.6rem 1.4rem !important;
+    font-size: 0.7rem !important;
+  }
+  
+  .back-btn:hover {
+    transform: none !important;
+  }
+}

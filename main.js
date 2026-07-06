@@ -249,6 +249,38 @@ lenis.on('scroll',function(e){
     scrub: false
   });
 
+  /* ANIMACIÓN STAGGER DE ENTRADA PARA PROYECTOS */
+  var sliderView = document.getElementById('slider-view');
+  var secBar = document.querySelector('#entregamos .sec-bar');
+  var botBar = document.getElementById('ui-bottom');
+  var centerLine = document.getElementById('center-line');
+  var thumbs = document.querySelectorAll('.thumb-container');
+  
+  if (section && sliderView) {
+      gsap.set(sliderView, { opacity: 0, y: 60 });
+      gsap.set(secBar, { opacity: 0, y: 30 });
+      if (botBar) gsap.set(botBar, { opacity: 0, y: 30 });
+      if (centerLine) gsap.set(centerLine, { opacity: 0, scaleY: 0 });
+      if (thumbs.length > 0) gsap.set(thumbs, { opacity: 0, y: 20 });
+      
+      ScrollTrigger.create({
+        trigger: section,
+        start: 'top top',
+        onEnter: function(){
+          var tl = gsap.timeline();
+          tl.to(sliderView, { opacity: 1, y: 0, duration: 1.2, ease: 'power3.out' });
+          if (secBar) tl.to(secBar, { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out' }, '-=0.6');
+          if (botBar) tl.to(botBar, { opacity: 1, y: 0, duration: 0.6, ease: 'power2.out' }, '-=0.6');
+          if (centerLine) tl.to(centerLine, { opacity: 1, scaleY: 1, duration: 0.8, ease: 'power2.out' }, '-=0.4');
+            
+          if (thumbs.length > 0) {
+            tl.to(thumbs, { opacity: 1, y: 0, duration: 0.8, stagger: 0.08, ease: 'power3.out' }, '-=0.5');
+          }
+        }
+      });
+  }
+
+
   const projectData = [
       { title: "ELEVATE APP", desc: "Plataforma de bienestar y meditación diseñada para mejorar la salud mental mediante rutinas diarias personalizadas.", tags: ["UI/UX", "APP", "WELLNESS"] },
       { title: "NOVA STUDIO", desc: "Agencia creativa especializada en identidades visuales disruptivas para startups tecnológicas de alto crecimiento.", tags: ["BRANDING", "CREATIVE", "WEB"] },

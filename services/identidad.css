@@ -142,8 +142,6 @@
   color: rgba(255, 255, 255, .8);
 }
 
-/* dlv-body-open forces the pre-opened body to auto height;
-   GSAP will then take over on init for subsequent clicks */
 .page-identidad .dlv-body-open {
   height: auto !important;
   overflow: visible !important;
@@ -166,7 +164,6 @@
 .page-identidad .dlv-title {
   font-size: 2.5rem;
 }
-
 
 .page-identidad .dlv-name {
   font-size: clamp(1rem, 1.8vw, 1.3rem);
@@ -516,4 +513,12 @@
   color: rgba(255, 255, 255, .32);
   line-height: 1.65;
   text-align: center;
+}
+/* ── FOUC Prevention / Scroll Trigger Initial States ── */
+.page-identidad .dlv-header,
+.page-identidad [data-dlv],
+.page-identidad #slider-view,
+.page-identidad #entregamos .sec-bar,
+.page-identidad #entregamos #ui-bottom {
+  opacity: 0;
 }

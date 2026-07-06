@@ -3018,3 +3018,233 @@ select.cta-field option {
   display: inline-flex !important;
   width: fit-content !important;
 }
+
+/* ══ RESPONSIVE OVERRIDES (MOBILE & TABLET) ════════════ */
+@media (max-width: 768px) {
+  /* Navbar */
+  #navbar {
+    min-width: 0 !important;
+    width: calc(100% - 32px) !important;
+    left: 16px !important;
+    padding: 8px 16px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+  
+  .nav-links {
+    display: none !important; /* Hide central links on mobile */
+  }
+  
+  .nav-left {
+    padding-right: 0 !important;
+  }
+  
+  .nav-right {
+    padding-left: 0 !important;
+  }
+  
+  .nav-active-pill,
+  .nav-link,
+  .nav-cta {
+    font-size: 0.65rem !important;
+    padding: 8px 16px !important;
+  }
+  
+  .nav-cta {
+    height: 2.1rem !important;
+  }
+
+  /* Hero Section */
+  #hero {
+    height: 100vh !important;
+    padding: 1.5rem 1rem !important;
+  }
+  
+  .hero-content {
+    padding: 0 16px !important;
+    width: 100% !important;
+  }
+  
+  .hero-title {
+    font-size: 1.6rem !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.02em !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .hero-sub {
+    font-size: 0.65rem !important;
+    letter-spacing: 0.08em !important;
+  }
+
+  /* Statement Section */
+  #statement {
+    min-height: auto !important;
+    padding: 60px 0 !important;
+  }
+  
+  .stmt-body {
+    padding: 20px !important;
+  }
+  
+  .stmt-text {
+    font-size: 1.4rem !important;
+    max-width: 100% !important;
+    line-height: 1.35 !important;
+    letter-spacing: -0.01em !important;
+  }
+  
+  .stmt-badges {
+    flex-direction: column !important;
+    padding: 20px !important;
+    gap: 20px !important;
+  }
+  
+  .badge {
+    padding: 0 !important;
+    width: 100% !important;
+    justify-content: center !important;
+    border-left: none !important;
+  }
+  
+  .badge + .badge {
+    border-left: none !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+    padding-top: 20px !important;
+  }
+
+  /* Services Section */
+  #services {
+    padding: 60px 16px !important;
+    min-height: auto !important;
+  }
+  
+  .srv-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: auto !important;
+  }
+  
+  .srv-intro-wrap {
+    position: static !important;
+    transform: none !important;
+    margin-bottom: 40px !important;
+    text-align: left !important;
+  }
+  
+  .srv-intro-text {
+    font-size: 1.6rem !important;
+  }
+  
+  .srv-cards-wrap {
+    gap: 20px !important;
+    position: static !important;
+  }
+
+  /* Brand Split Section (Historias de Marca) */
+  .brand-split-container {
+    flex-direction: column !important;
+    height: auto !important;
+    min-height: auto !important;
+  }
+  
+  .brand-col {
+    width: 100% !important;
+    height: 50vh !important; /* Split vertically instead of horizontally */
+  }
+
+  /* Metrics Section */
+  #metrics {
+    height: auto !important;
+    min-height: auto !important;
+    padding: 60px 20px !important;
+  }
+  
+  .metrics-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  
+  .metric-item {
+    border-right: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+    padding-bottom: 30px !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    text-align: center !important;
+  }
+  
+  .metric-item:last-child {
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* FAQ Section */
+  #faq {
+    padding: 60px 20px !important;
+    height: auto !important;
+    min-height: auto !important;
+  }
+  
+  .faq-container {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+  
+  .faq-title {
+    font-size: 1.8rem !important;
+  }
+  
+  .faq-item-title {
+    font-size: 1rem !important;
+    padding: 20px 0 !important;
+  }
+
+  /* Contact Section Form */
+  .cta-form-state {
+    padding: 80px 16px 40px !important;
+  }
+  
+  .cta-form-title {
+    font-size: 1.8rem !important;
+    margin-bottom: 24px !important;
+  }
+  
+  .cta-form-grid {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.95rem !important;
+    padding: 10px 0 !important;
+  }
+  
+  .form-group label {
+    font-size: 0.65rem !important;
+  }
+
+  /* Footer */
+  #footer {
+    padding: 60px 20px 20px !important;
+  }
+  
+  .ftr-inner {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 40px !important;
+  }
+  
+  .ftr-nav {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+  }
+  
+  .ftr-watermark {
+    font-size: 20vw !important;
+    bottom: -10px !important;
+  }
+}
