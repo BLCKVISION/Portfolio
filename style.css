@@ -1,167 +1,167 @@
 @font-face {
   font-family: 'MR';
-  src: url('fonts/MR.otf') format('opentype');
+  src: url('/fonts/MR.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'ML';
-  src: url('fonts/ML.otf') format('opentype');
+  src: url('/fonts/ML.otf') format('opentype');
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'MRI';
-  src: url('fonts/MRI.otf') format('opentype');
+  src: url('/fonts/MRI.otf') format('opentype');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'MB';
-  src: url('fonts/MB.otf') format('opentype');
+  src: url('/fonts/MB.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'MBI';
-  src: url('fonts/MBI.otf') format('opentype');
+  src: url('/fonts/MBI.otf') format('opentype');
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'MLI';
-  src: url('fonts/MLI.otf') format('opentype');
+  src: url('/fonts/MLI.otf') format('opentype');
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Blauer Neu';
-  src: url('fonts/Blauer-Nue-Thin.otf') format('opentype');
+  src: url('/fonts/Blauer-Nue-Thin.otf') format('opentype');
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Blauer Neu';
-  src: url('fonts/Blauer-Nue-Thin-Italic.otf') format('opentype');
+  src: url('/fonts/Blauer-Nue-Thin-Italic.otf') format('opentype');
   font-weight: 100;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Blauer Neu';
-  src: url('fonts/Blauer-Nue-Extralight.otf') format('opentype');
+  src: url('/fonts/Blauer-Nue-Extralight.otf') format('opentype');
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Blauer Neu';
-  src: url('fonts/Blauer-Nue-Extralight-Italic.otf') format('opentype');
+  src: url('/fonts/Blauer-Nue-Extralight-Italic.otf') format('opentype');
   font-weight: 200;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Blauer Neu';
-  src: url('fonts/Blauer-Nue-Light.otf') format('opentype');
+  src: url('/fonts/Blauer-Nue-Light.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Blauer Neu';
-  src: url('fonts/Blauer-Nue-Light-Italic.otf') format('opentype');
+  src: url('/fonts/Blauer-Nue-Light-Italic.otf') format('opentype');
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Blauer Neu';
-  src: url('fonts/Blauer-Nue-Regular.otf') format('opentype');
+  src: url('/fonts/Blauer-Nue-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Blauer Neu';
-  src: url('fonts/Blauer-Nue-Regular-Italic.otf') format('opentype');
+  src: url('/fonts/Blauer-Nue-Regular-Italic.otf') format('opentype');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Blauer Neu';
-  src: url('fonts/Blauer-Nue-Medium.otf') format('opentype');
+  src: url('/fonts/Blauer-Nue-Medium.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Blauer Neu';
-  src: url('fonts/Blauer-Nue-Medium-Italic.otf') format('opentype');
+  src: url('/fonts/Blauer-Nue-Medium-Italic.otf') format('opentype');
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Blauer Neu';
-  src: url('fonts/Blauer-Nue-Semibold.otf') format('opentype');
+  src: url('/fonts/Blauer-Nue-Semibold.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Blauer Neu';
-  src: url('fonts/Blauer-Nue-Semibold-Italic.otf') format('opentype');
+  src: url('/fonts/Blauer-Nue-Semibold-Italic.otf') format('opentype');
   font-weight: 600;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Blauer Neu';
-  src: url('fonts/Blauer-Nue-Bold.otf') format('opentype');
+  src: url('/fonts/Blauer-Nue-Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Blauer Neu';
-  src: url('fonts/Blauer-Nue-Bold-Italic.otf') format('opentype');
+  src: url('/fonts/Blauer-Nue-Bold-Italic.otf') format('opentype');
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Blauer Neu';
-  src: url('fonts/Blauer-Nue-Extrabold.otf') format('opentype');
+  src: url('/fonts/Blauer-Nue-Extrabold.otf') format('opentype');
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Blauer Neu';
-  src: url('fonts/Blauer-Nue-Extrabold-Italic.otf') format('opentype');
+  src: url('/fonts/Blauer-Nue-Extrabold-Italic.otf') format('opentype');
   font-weight: 800;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Blauer Neu';
-  src: url('fonts/Blauer-Nue-Heavy.otf') format('opentype');
+  src: url('/fonts/Blauer-Nue-Heavy.otf') format('opentype');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Blauer Neu';
-  src: url('fonts/Blauer-Nue-Heavy-Italic.otf') format('opentype');
+  src: url('/fonts/Blauer-Nue-Heavy-Italic.otf') format('opentype');
   font-weight: 900;
   font-style: italic;
 }
