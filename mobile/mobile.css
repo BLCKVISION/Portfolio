@@ -1486,7 +1486,9 @@ body {
     text-align: center !important;
   }
 
-  .page-body .srv-hero-desc {
+  .page-body .srv-hero-desc,
+  .page-body .hero-sub,
+  .page-body .srv-hero-desc-col {
     display: none !important;
   }
 
@@ -1512,4 +1514,11 @@ body {
     font-size: clamp(2.5rem, 10vw, 3.5rem) !important;
     text-align: center;
   }
+}
+
+/* FIX FOOTER REQUERIDO */
+#footer {
+    overflow: hidden !important;
+    position: relative !important;
+    padding-top: 5vh !important;
 }

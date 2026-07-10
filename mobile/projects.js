@@ -34,7 +34,7 @@ const _allProjects = [
   const dir = prefix + p.folder + '/';
   return {
     ...p,
-    heroImg: dir + "1.webp",
+    heroImg: dir + "1M.webp",
     img2: dir + "2.webp",
     img3: dir + "3.webp",
     img4: dir + "4.webp",

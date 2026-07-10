@@ -1,4 +1,4 @@
-﻿/* === FONT FACES === */
+/* === FONT FACES === */
 @font-face {
   font-family: 'MR';
   src: url('../fonts/MR.otf') format('opentype');
@@ -718,10 +718,21 @@ padding-bottom: 30px;
   position: relative !important;
   z-index: 10 !important;
 }
-.project-header, .project-images, #proj-footer {
+.project-header, .project-images, #proj-footer { 
   position: relative;
   z-index: 10;
   background: #000;
+}
+
+#proj-footer {
+  pointer-events: auto !important;
+  z-index: 9999 !important;
+}
+
+#proj-footer .gs-reveal {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
 }
 
 @media (max-width: 900px) {
