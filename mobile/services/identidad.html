@@ -2,16 +2,11 @@
 <html lang="es">
 
 <head>
-  <script>
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 900) {
-      window.location.replace("../mobile/services/automatizacion.html");
-    }
-  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Automatización IA — BLCK VISION</title>
+  <title>Identidad Visual — BLCK VISION</title>
   <meta name="description"
-    content="Automatización con Inteligencia Artificial. Agentes, flujos y sistemas que eliminan fricción y multiplican la capacidad de tu equipo sin contratar más personas." />
+    content="Sistemas de identidad visual completos. Estrategia, visual, voz y aplicación. Todo lo que una marca necesita para ser reconocida, recordada y elegida." />
 
   <!-- GSAP + Lenis -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -19,15 +14,16 @@
   <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/CustomEase.min.js"></script>
 
-  <!-- CSS — paths relative to blck/ -->
+  <!-- CSS — paths relative to blck/services/ -->
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../mobile.css">
   <link rel="stylesheet" href="../pages.css">
-  <link rel="stylesheet" href="../services.css">
+  <link rel="stylesheet" href="../../services.css">
   <link rel="stylesheet" href="../projects.css">
-  <link rel="stylesheet" href="automatizacion.css">
+  <link rel="stylesheet" href="identidad.css">
 </head>
 
-<body class="page-body page-automatizacion">
+<body class="page-body page-identidad">
 
   <!-- ══ PRELOADER ══════════════════════════════════════════ -->
   <div id="preloader">
@@ -45,36 +41,48 @@
   <div id="cursor"></div>
 
   <!-- ══ NAVBAR ════════════════════════════════════════════= -->
-  <nav id="navbar">
-    <div class="nav-left">
-      <a href="../index.html" class="nav-link">INICIO</a>
+      <nav id="navbar">
+      <div class="nav-left">
+        <a href="../indexphone.html#hero" class="nav-isotipo-wrap">
+          <img class="nav-isotipo" src="../../img/Isotipo.png" alt="BLCK VISION">
+        </a>
+      </div>
+      <div class="nav-right">
+        <button class="nav-hamburger" id="navHamburger" aria-label="Abrir menÃº" aria-expanded="false">
+          <span class="ham-line ham-l1"></span>
+          <span class="ham-line ham-l2"></span>
+          <span class="ham-line ham-l3"></span>
+        </button>
+      </div>
+    </nav>
+
+  <!-- ══ FULLSCREEN MOBILE MENU ══════════════════════════ -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mm-bg"></div>
+    <img src="../../img/Isotipo.png" class="mm-isotipo" alt="BLCK VISION">
+    <nav class="mm-nav">
+      <a href="../indexphone.html#hero" class="mm-link">INICIO</a>
+      <a href="../indexphone.html#trust" class="mm-link">NOSOTROS</a>
+      <a href="../indexphone.html#services" class="mm-link">SERVICIOS</a>
+      <a href="../indexphone.html#entregamos" class="mm-link">PROYECTOS</a>
+      <a href="../indexphone.html#contact" class="mm-link">CONTACTAR</a>
+    </nav>
+    <div class="mm-footer">
+      <span>BLCK VISION © 2025</span>
     </div>
-    <div class="nav-links">
-      <a href="../index.html#trust" class="nav-link">NOSOTROS</a>
-      <a href="../index.html#services" class="nav-link">SERVICIOS</a>
-      <a href="../index.html#entregamos" class="nav-link">PROYECTOS</a>
-    </div>
-    <div class="nav-right">
-      <a href="#" class="nav-cta" id="automatContactCta">
-        CONTACTAR
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-          <path d="M5 12h14M12 5l7 7-7 7" />
-        </svg>
-      </a>
-    </div>
-  </nav>
+  </div>
 
   <!-- ══ HERO ═════════════════════════════════════════════= -->
   <section id="srv-hero">
 
     <!-- Background image only — no overlays, no isotipo -->
     <div class="srv-hero-bg">
-      <img src="../img/srv_automatizacion.webp" alt="Automatización IA BLCK VISION" loading="eager" decoding="async">
+      <img src="../../img/srv_identidad1.webp" alt="Identidad Visual BLCK VISION" loading="eager" decoding="async">
     </div>
 
     <!-- Top bar -->
     <div class="sec-bar srv-hero-topbar">
-      <span class="sec-bar-left">AUTOMATIZACIÓN IA</span>
+      <span class="sec-bar-left">IDENTIDAD VISUAL</span>
       <span class="sec-bar-center"></span>
       <span class="sec-bar-right">19 — 26</span>
     </div>
@@ -85,16 +93,18 @@
       <!-- LEFT: title, aligned to bottom left -->
       <div class="srv-hero-title-col">
         <h1 class="srv-hero-title">
-          <span class="line"><span class="line-inner">TU EQUIPO <strong>MULTIPLICADO</strong></span></span>
-          <span class="line"><span class="line-inner">SIN <strong>CONTRATAR</strong></span></span>
+          <span class="line"><span class="line-inner">MARCAS QUE <strong>DOMINAN</strong></span></span>
+          <span class="line"><span class="line-inner">SU <strong>MERCADO</strong></span></span>
         </h1>
       </div>
 
       <!-- RIGHT: description, centered vertically in its column -->
       <div class="srv-hero-desc-col">
         <p class="srv-hero-desc">
-          LA IA BIEN APLICADA NO REEMPLAZA PERSONAS: MULTIPLICA EQUIPOS. DISEÑAMOS AGENTES, FLUJOS Y SISTEMAS
-          AUTOMATIZADOS QUE ELIMINAN LAS FRICCIONES OPERATIVAS QUE FRENAN TU CRECIMIENTO.
+          CONSTRUCCIÓN DE SISTEMAS DE IDENTIDAD COMPLETOS.
+          ESTRATEGIA, VISUAL, VOZ Y APLICACIÓN. <strong>TODO LO QUE UNA
+            MARCA NECESITA</strong> PARA SER RECONOCIDA, RECORDADA Y
+          ELEGIDA.
         </p>
       </div>
 
@@ -110,17 +120,17 @@
       <span class="sec-bar-right">01 — 03</span>
     </div>
     <div class="stmt-body">
-      <p class="stmt-text" id="stmtText">ELIMINAMOS EL TRABAJO REPETITIVO. REEMPLAZAMOS LA FRICCIÓN OPERATIVA CON AGENTES DE IA INTELIGENTES.</p>
+      <p class="stmt-text" id="stmtText">Una identidad que no se diferencia es invisible. Creamos marcas que obligan a mirar y dominar.</p>
     </div>
   </section>
 
-  <!-- ══ AUTOMATION PROJECTS (SLIDER) ══════════════════════════════════ -->
+  <!-- ══ BRANDING PROJECTS (SLIDER) ══════════════════════════════════ -->
   <section id="entregamos" style="position: relative; width: 100%; height: 100vh; overflow: hidden; background: #000;">
 
     <div class="sec-bar" style="position: absolute; top: 0; left: 0; width: 100%; z-index: 99;">
       <span class="sec-bar-left">PROYECTOS</span>
       <span class="sec-bar-center"></span>
-      <span class="sec-bar-right">03 — 06</span>
+      <span class="sec-bar-right">02 — 03</span>
     </div>
 
     <!-- BOTÓN VOLVER (fijo, oculto por defecto) -->
@@ -128,13 +138,7 @@
       <span>VOLVER</span>
     </div>
 
-    <!-- WIDGET CONTRATAR FIJO -->
-    <div class="glass-widget-wrapper hover-target" id="hire-widget">
-      <div class="glass-widget">
-        <div class="widget-text">INICIAR PROYECTO</div>
-        <div class="widget-arrow">&#8594;</div>
-      </div>
-    </div>
+    
 
     <!-- UI: Barra inferior -->
     <div class="ui-layer bottom-bar" id="ui-bottom" style="display:none">
@@ -181,6 +185,9 @@
       <!-- PIE DE PÁGINA -->
       <div class="cta-wrapper" id="proj-footer">
         <div class="cta-section gs-reveal">
+                    <div style="text-align: center; margin-bottom: 40px;">
+            <a href="https://wa.me/584121234567?text=Hola%2C%20quiero%20iniciar%20un%20proyecto" class="cta-wa hover-target" target="_blank" rel="noopener">EMPEZAR PROYECTO</a>
+          </div>
           <div class="discover-more">
             <div class="discover-grid" id="discover-grid" style="margin-bottom: 40px;"></div>
             <div style="text-align: left;">
@@ -209,7 +216,7 @@
   <section id="srv-deliverables" class="grain">
 
     <div class="sec-bar dlv-bar">
-      <span class="sec-bar-left">SISTEMAS</span>
+      <span class="sec-bar-left">ENTREGABLES</span>
       <span class="sec-bar-center"></span>
       <span class="sec-bar-right">01 — 03</span>
     </div>
@@ -218,7 +225,8 @@
 
       <div class="dlv-header">
         <h2 class="dlv-title">
-          <span class="dlv-thin">Sistemas, </span><strong>No Herramientas.</strong>
+          <span class="dlv-thin">Una </span><strong>Identidad Completa,</strong><br>
+          No un Logo.
         </h2>
       </div>
 
@@ -228,13 +236,12 @@
           <span class="dlv-num">01</span>
           <div class="dlv-content">
             <button class="dlv-btn">
-              <span class="dlv-name">Agentes de IA Personalizados</span>
+              <span class="dlv-name">Estrategia de Marca</span>
               <span class="dlv-icon">+</span>
             </button>
             <div class="dlv-body">
               <div class="dlv-body-inner">
-                <p class="dlv-desc">Tendrás más capacidad de respuesta, menos errores humanos y un equipo que se enfoca
-                  en lo que realmente importa.</p>
+                <p class="dlv-desc">Sabrás exactamente qué hace única a tu marca y cómo comunicarlo. Tendrás una dirección clara antes de invertir un peso en diseño.</p>
               </div>
             </div>
           </div>
@@ -244,13 +251,12 @@
           <span class="dlv-num">02</span>
           <div class="dlv-content">
             <button class="dlv-btn">
-              <span class="dlv-name">Flujos de Automatización</span>
+              <span class="dlv-name">Brandbook Completo</span>
               <span class="dlv-icon">+</span>
             </button>
             <div class="dlv-body">
               <div class="dlv-body-inner">
-                <p class="dlv-desc">Tus herramientas trabajan juntas sin fricción. Los datos fluyen solos y tú dejas de
-                  repetir tareas manuales entre plataformas.</p>
+                <p class="dlv-desc">Tu equipo, tus proveedores y tus clientes verán siempre la misma marca. Sin versiones desactualizadas ni interpretaciones libres.</p>
               </div>
             </div>
           </div>
@@ -260,13 +266,12 @@
           <span class="dlv-num">03</span>
           <div class="dlv-content">
             <button class="dlv-btn">
-              <span class="dlv-name">Chatbots &amp; Atención 24/7</span>
+              <span class="dlv-name">Aplicaciones &amp; Mockups</span>
               <span class="dlv-icon">+</span>
             </button>
             <div class="dlv-body">
               <div class="dlv-body-inner">
-                <p class="dlv-desc">Tus clientes reciben respuestas instantáneas a las 3am. Tú no pierdes leads y no
-                  pierdes horas respondiendo lo mismo.</p>
+                <p class="dlv-desc">Verás tu marca viva antes de lanzar. Tarjetas, redes, packaging — todo listo para usar el día uno.</p>
               </div>
             </div>
           </div>
@@ -276,70 +281,72 @@
     </div>
   </section>
 
+  
+
   <!-- ══ PROCESS ════════════════════════════════════════════ -->
   <section id="srv-process" class="grain">
     <div class="sec-bar proc-bar">
       <span class="sec-bar-left">METODOLOGÍA</span>
       <span class="sec-bar-center"></span>
-      <span class="sec-bar-right">02 — 04</span>
+      <span class="sec-bar-right">03 — 03</span>
     </div>
     <div class="proc-inner">
       <div class="proc-left">
         <h2 class="proc-title">
           <span style="font-family: 'ML', sans-serif;">PROCESO DE</span><br>
-          <span style="font-family: 'MR', sans-serif;">DESARROLLO</span>
+          <span style="font-family: 'MR', sans-serif;">DISEÑO</span>
         </h2>
       </div>
       <div class="proc-right">
 
         <div class="proc-item" data-proc>
           <button class="proc-btn">
-            <span class="proc-name">Auditoría &amp; Diagnóstico</span>
+            <span class="proc-name">Descubrimiento y Análisis</span>
             <span class="proc-dur">1 SEMANA</span>
           </button>
           <div class="proc-body">
             <div class="proc-body-inner">
-              <p class="proc-desc">Mapeo de procesos actuales, identificación de fricciones, priorización de impacto y
-                propuesta técnica.</p>
+              <p class="proc-desc">Investigación de mercado, análisis de competencia, entrevistas y definición de
+                audiencia. La base estratégica de todo.</p>
             </div>
           </div>
         </div>
 
         <div class="proc-item" data-proc>
           <button class="proc-btn">
-            <span class="proc-name">Arquitectura &amp; Diseño</span>
+            <span class="proc-name">Estrategia y Dirección</span>
             <span class="proc-dur">1 SEMANA</span>
           </button>
           <div class="proc-body">
             <div class="proc-body-inner">
-              <p class="proc-desc">Mapa de flujos y nodos, selección de herramientas, diseño del sistema y validación
-                con el equipo.</p>
+              <p class="proc-desc">Posicionamiento, moodboard, arquetipo y voz de marca. La dirección visual aprobada
+                antes de diseñar.</p>
             </div>
           </div>
         </div>
 
         <div class="proc-item" data-proc>
           <button class="proc-btn">
-            <span class="proc-name">Desarrollo &amp; Tests</span>
-            <span class="proc-dur">2 — 3 SEMANAS</span>
+            <span class="proc-name">Diseño y Sistema</span>
+            <span class="proc-dur">1 — 2 SEMANAS</span>
           </button>
           <div class="proc-body">
             <div class="proc-body-inner">
-              <p class="proc-desc">Construcción de flujos, entrenamiento de agentes, pruebas en entorno real, ajustes y
-                refinamiento.</p>
+              <p class="proc-desc">Exploración de logotipos, sistema de color, tipografía e iteraciones hasta la
+                aprobación final.</p>
             </div>
           </div>
         </div>
 
         <div class="proc-item" data-proc>
           <button class="proc-btn">
-            <span class="proc-name">Deploy &amp; Monitoreo</span>
+            <span class="proc-name">Entrega y Aplicación</span>
             <span class="proc-dur">1 SEMANA</span>
           </button>
           <div class="proc-body">
             <div class="proc-body-inner">
-              <p class="proc-desc">Lanzamiento en producción, panel de monitoreo, capacitación del equipo y optimización
-                continua.</p>
+              <p class="proc-desc">Brandbook completo, mockups, archivos fuente y sesión de handoff. Tu identidad lista
+                para operar.</p>
             </div>
           </div>
         </div>
@@ -351,51 +358,42 @@
   <!-- ══ CONTACT CTA ════════════════════════════════════ -->
   <section id="contact">
     <div class="cta-bg" id="ctaBg">
-      <img src="../img/srv_automatizacion.webp" alt="" class="cta-bg-img" loading="lazy" decoding="async">
+      <img src="../../img/srv_identidad.webp" alt="" class="cta-bg-img" loading="lazy" decoding="async">
     </div>
 
     <!-- STATE 1: Stat view (default) -->
     <div class="cta-body" id="ctaStatView">
-      <h2 class="cta-number" data-target="70">0%</h2>
-      <p class="cta-stat">DEL TIEMPO EN LA OPERACIÓN <span class="regular white">ES TAREA MANUAL REPETITIVA</span></p>
-      <a href="https://wa.me/584121234567?text=Hola%2C%20quiero%20iniciar%20un%20proyecto%20de%20Automatizaci%C3%B3n%20IA%20con%20BLCK%20VISION"
+      <h2 class="cta-number" data-target="82">0%</h2>
+      <p class="cta-stat">DE LAS DECISIONES DE COMPRA <span class="regular white">SON EMOCIONALES</span></p>
+      <a href="https://wa.me/584121234567?text=Hola%2C%20quiero%20iniciar%20un%20proyecto%20de%20Identidad%20Visual%20con%20BLCK%20VISION"
         class="cta-wa" id="bottomContactCta" target="_blank" rel="noopener">
-        ¿ AUTOMATIZAMOS ?
+        ¿ TU MARCA EMOCIONA ?
       </a>
     </div>
   </section>
 
-  <!-- ══ FOOTER ════════════════════════════════════════════= -->
   
 
   <!-- ══ SCRIPTS ════════════════════════════════════════════ -->
   <script src="../pages.js"></script>
-  <!-- Projects slider: no category filter — show all portfolio projects -->
+  <script>window.PROJECTS_FILTER = 'IDENTIDAD VISUAL';</script>
   <script src="../projects.js"></script>
   <script>
     /* ── Nav CTA → WhatsApp ──────────────────────────────── */
-    var automatContactCta = document.getElementById('automatContactCta');
-    if (automatContactCta) {
-      automatContactCta.addEventListener('click', function (e) {
+    var identCtaCta = document.getElementById('identCtaCta');
+    if (identCtaCta) {
+      identCtaCta.addEventListener('click', function (e) {
         e.preventDefault();
         window.open(
-          'https://wa.me/584121234567?text=Hola%2C%20quiero%20iniciar%20un%20proyecto%20de%20Automatizaci%C3%B3n%20IA%20con%20BLCK%20VISION',
+          'https://wa.me/584121234567?text=Hola%2C%20quiero%20iniciar%20un%20proyecto%20de%20Identidad%20Visual%20con%20BLCK%20VISION',
           '_blank', 'noopener'
         );
-      gsap.set('[data-proc]', { opacity: 0, y: 28 });
-      ScrollTrigger.create({
-        trigger: '#srv-process', start: 'top 50%', once: true,
-        onEnter: function () {
-          gsap.timeline()
-            .to('.proc-title', { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out' })
-            .to('[data-proc]', { opacity: 1, y: 0, duration: 0.7, stagger: 0.1, ease: 'power3.out' }, '-=0.5');
-        }
-      });
-
       });
     }
 
-    /* ── Accordion: Deliverables (all start collapsed) ───── */
+
+
+        /* ── Accordion: Deliverables (all start collapsed) ───── */
     document.querySelectorAll('[data-dlv] .dlv-btn').forEach(function (btn) {
       var body = btn.parentElement.querySelector('.dlv-body');
       var icon = btn.querySelector('.dlv-icon');
@@ -412,7 +410,7 @@
           gsap.to(ob.parentElement.querySelector('.dlv-body'), {
             height: 0,
             duration: 0.22,
-            ease: 'power3.inOut',
+            ease: 'power2.inOut',
             onComplete: function() { ScrollTrigger.refresh(); }
           });
         });
@@ -423,7 +421,7 @@
           gsap.to(body, {
             height: 'auto',
             duration: 0.28,
-            ease: 'power3.out',
+            ease: 'power2.out',
             onComplete: function() { ScrollTrigger.refresh(); }
           });
         }
@@ -441,7 +439,7 @@
           gsap.to(ob.parentElement.querySelector('.proc-body'), {
             height: 0,
             duration: 0.22,
-            ease: 'power3.inOut',
+            ease: 'power2.inOut',
             onComplete: function() { ScrollTrigger.refresh(); }
           });
         });
@@ -450,7 +448,7 @@
           gsap.to(body, {
             height: 'auto',
             duration: 0.28,
-            ease: 'power3.out',
+            ease: 'power2.out',
             onComplete: function() { ScrollTrigger.refresh(); }
           });
         }
@@ -489,8 +487,16 @@
       if (typeof preloaderDone !== 'undefined' && preloaderDone) { revealHero(); }
       else if (typeof pageRevealQueue !== 'undefined') { pageRevealQueue.push(revealHero); }
       else { window.addEventListener('load', revealHero); }
+      /* Reveal navbar on mobile services */
+      function revealNavMobile() {
+        gsap.to('#navbar', { y: 0, duration: 0.7, ease: 'power3.out' });
+      }
+      if (typeof preloaderDone !== 'undefined' && preloaderDone) { revealNavMobile(); }
+      else if (typeof pageRevealQueue !== 'undefined') { pageRevealQueue.push(revealNavMobile); }
 
-      /* ── Deliverables stagger entrance ─────────────────── */
+
+
+            /* ── Deliverables stagger entrance ─────────────────── */
       gsap.set('.dlv-header', { opacity: 0, y: 40 });
       gsap.set('[data-dlv]', { opacity: 0, y: 28 });
       ScrollTrigger.create({
@@ -502,27 +508,39 @@
         }
       });
 
+      /* ── Branding projects stagger entrance ─────────────── */
+      gsap.set('.bprj-card', { opacity: 0, y: 30 });
+      ScrollTrigger.create({
+        trigger: '#srv-branding-projects', start: 'top 50%', once: true,
+        onEnter: function () {
+          gsap.to('.bprj-card', { opacity: 1, y: 0, duration: 0.9, stagger: 0.12, ease: 'power3.out' });
+        }
+      });
 
-      /* ── Process stagger entrance ─────────────────── */
-      gsap.set('.proc-title', { opacity: 0, y: 30 });
-      gsap.set('[data-proc]', { opacity: 0, y: 28 });
+      /* ── Process stagger entrance ────────────────────────── */
+      gsap.set('.proc-left', { opacity: 0, x: -40 });
+      gsap.set('[data-proc]', { opacity: 0, y: 20 });
       ScrollTrigger.create({
         trigger: '#srv-process', start: 'top 50%', once: true,
         onEnter: function () {
           gsap.timeline()
-            .to('.proc-title', { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out' })
-            .to('[data-proc]', { opacity: 1, y: 0, duration: 0.7, stagger: 0.1, ease: 'power3.out' }, '-=0.5');
+            .to('.proc-left', { opacity: 1, x: 0, duration: 1, ease: 'power3.out' })
+            .to('[data-proc]', { opacity: 1, y: 0, duration: 0.65, stagger: 0.1, ease: 'power3.out' }, '-=0.7');
         }
       });
+
+
+
 
       /* ── Sec-bars stagger ────────────────────────────────── */
       document.querySelectorAll('.sec-bar-left, .sec-bar-right').forEach(function (el) {
         gsap.set(el, { opacity: 0, y: 8 });
         ScrollTrigger.create({
           trigger: el, start: 'top 92%', once: true,
-          onEnter: function () { gsap.to(el, { opacity: 1, y: 0, duration: 0.285, ease: 'power3.out' }); }
+          onEnter: function () { gsap.to(el, { opacity: 1, y: 0, duration: 0.55, ease: 'power3.out' }); }
         });
       });
+
 
       window.addEventListener('load', function () {
         ScrollTrigger.sort();
@@ -532,6 +550,55 @@
     })();
   </script>
 
+  <script>
+    (function () {
+      var ham = document.getElementById('navHamburger');
+      var menu = document.getElementById('mobileMenu');
+      if (!ham || !menu) return;
+      var links = menu.querySelectorAll('.mm-link');
+      var open = false;
+      var mmIsotipo = document.querySelector('.mm-isotipo');
+
+      function openMenu() {
+        open = true;
+        menu.classList.add('is-open');
+        ham.classList.add('is-active');
+        document.getElementById('navbar').classList.add('menu-open');
+        ham.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+        gsap.set(links, { y: 50, opacity: 0 });
+        gsap.set(mmIsotipo, { opacity: 0, y: -20 });
+        gsap.to(links, {
+          y: 0, opacity: 1,
+          duration: 0.55, stagger: 0.07,
+          ease: 'power3.out', delay: 0.18
+        });
+        gsap.to(mmIsotipo, {
+          opacity: 1, y: 0,
+          duration: 0.55, ease: 'power3.out', delay: 0.2
+        });
+      }
+
+      function closeMenu() {
+        gsap.to([links, mmIsotipo], {
+          y: -30, opacity: 0,
+          duration: 0.28, stagger: 0.04, ease: 'power2.in',
+          onComplete: function () {
+            menu.classList.remove('is-open');
+            ham.classList.remove('is-active');
+            document.getElementById('navbar').classList.remove('menu-open');
+            ham.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+          }
+        });
+      }
+
+      ham.addEventListener('click', function () { open ? closeMenu() : openMenu(); });
+      links.forEach(function (l) {
+        l.addEventListener('click', function () { closeMenu(); });
+      });
+    })();
+  </script>
 </body>
 
 </html>

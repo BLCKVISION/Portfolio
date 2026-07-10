@@ -2,11 +2,6 @@
 <html lang="es">
 
 <head>
-  <script>
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 900) {
-      window.location.replace("mobile/indexphone.html");
-    }
-  </script>
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,6 +15,9 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="pages.css">
   <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="mobile.css">
+  <!-- Mobile: no custom cursor, touch-friendly -->
+  <meta name="theme-color" content="#000000">
 
 </head>
 
@@ -39,27 +37,39 @@
   <!-- ══ NAVBAR ════════════════════════════════════════ -->
   <nav id="navbar">
     <div class="nav-left">
-      <a href="#hero" class="nav-active-pill">INICIO</a>
-    </div>
-    <div class="nav-links">
-      <a href="#trust" class="nav-link">NOSOTROS</a>
-      <a href="#services" class="nav-link">SERVICIOS</a>
-      <a href="#entregamos" class="nav-link">PROYECTOS</a>
-    </div>
-    <div class="nav-right">
-      <a href="#" class="nav-cta" id="navContactCta">
-        CONTACTAR
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-          <path d="M5 12h14M12 5l7 7-7 7" />
-        </svg>
+      <a href="#hero" class="nav-isotipo-wrap">
+        <img src="../img/Isotipo.png" class="nav-isotipo" alt="BLCK VISION">
       </a>
     </div>
+    <div class="nav-right">
+      <button class="nav-hamburger" id="navHamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span class="ham-line ham-l1"></span>
+        <span class="ham-line ham-l2"></span>
+        <span class="ham-line ham-l3"></span>
+      </button>
+    </div>
   </nav>
+
+  <!-- ══ FULLSCREEN MOBILE MENU ══════════════════════════ -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mm-bg"></div>
+    <img src="../img/Isotipo.png" class="mm-isotipo" alt="BLCK VISION">
+    <nav class="mm-nav">
+      <a href="#hero" class="mm-link">INICIO</a>
+      <a href="#trust" class="mm-link">NOSOTROS</a>
+      <a href="#services" class="mm-link">SERVICIOS</a>
+      <a href="#entregamos" class="mm-link">PROYECTOS</a>
+      <a href="#contact" class="mm-link">CONTACTAR</a>
+    </nav>
+    <div class="mm-footer">
+      <span>BLCK VISION © 2025</span>
+    </div>
+  </div>
 
   <!-- ══ HERO ════════════════════════════════════════════ -->
   <section id="hero">
     <div class="hero-bg">
-      <img src="img/H2.webp" alt="BLCK VISION Hero" class="hero-bg-img" loading="eager" decoding="async">
+      <img src="../img/H2.webp" alt="BLCK VISION Hero" class="hero-bg-img" loading="eager" decoding="async">
     </div>
     <div class="sec-bar">
       <span class="sec-bar-left">BLCK VISION</span>
@@ -109,9 +119,9 @@
       </div>
 
       <div class="srv-cards-wrap" id="srvCardsWrap">
-        <a href="services/identidad.html" class="srv-card-row hover-target">
+        <a href="../services/identidad.html" class="srv-card-row hover-target">
           <h3 class="srv-card-title">Identidad Visual</h3>
-          <p class="srv-card-desc">Sistemas de identidad completos: estrategia, diseño visual, voz de marca y
+          <p class="srv-card-desc">estrategia, diseño visual, voz de marca y
             aplicaciones físicas y digitales.</p>
           <span class="srv-card-arrow">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
@@ -120,9 +130,9 @@
           </span>
         </a>
 
-        <a href="services/web.html" class="srv-card-row hover-target">
+        <a href="../services/web.html" class="srv-card-row hover-target">
           <h3 class="srv-card-title">Desarrollo Web</h3>
-          <p class="srv-card-desc">Plataformas digitales rápidas, responsivas, optimizadas para SEO y construidas con
+          <p class="srv-card-desc">Plataformas optimizadas para SEO y construidas con
             arquitectura de conversión.</p>
           <span class="srv-card-arrow">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
@@ -131,9 +141,9 @@
           </span>
         </a>
 
-        <a href="services/automatizacion.html" class="srv-card-row hover-target">
+        <a href="../services/automatizacion.html" class="srv-card-row hover-target">
           <h3 class="srv-card-title">Automatización IA</h3>
-          <p class="srv-card-desc">Agentes autónomos, integraciones personalizadas y flujos de trabajo inteligentes que
+          <p class="srv-card-desc">Agentes e integraciones personalizadas que
             eliminan tareas operativas repetitivas.</p>
           <span class="srv-card-arrow">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
@@ -149,6 +159,7 @@
   <section id="entregamos" style="position: relative; width: 100%; height: 100vh; overflow: hidden; background: #000;">
     <div class="sec-bar" style="position: absolute; top: 0; left: 0; width: 100%; z-index: 99;">
       <span class="sec-bar-left">PROYECTOS</span>
+
       <span class="sec-bar-center"></span>
       <span class="sec-bar-right">03 — 06</span>
     </div>
@@ -158,12 +169,7 @@
     </div>
 
     <!-- WIDGET CONTRATAR FIJO -->
-    <div class="glass-widget-wrapper hover-target" id="hire-widget">
-      <div class="glass-widget">
-        <div class="widget-text">INICIAR PROYECTO</div>
-        <div class="widget-arrow">&#8594;</div>
-      </div>
-    </div>
+    
 
     <!-- UI: Barra inferior -->
     <div class="ui-layer bottom-bar" id="ui-bottom">
@@ -210,6 +216,9 @@
       <!-- PIE DE PÁGINA -->
       <div class="cta-wrapper" id="proj-footer">
         <div class="cta-section gs-reveal">
+                    <div style="text-align: center; margin-bottom: 40px;">
+            <a href="https://wa.me/584121234567?text=Hola%2C%20quiero%20iniciar%20un%20proyecto" class="cta-wa hover-target" target="_blank" rel="noopener">EMPEZAR PROYECTO</a>
+          </div>
           <div class="discover-more">
             <div class="discover-grid" id="discover-grid" style="margin-bottom: 40px;"></div>
             <div style="text-align: left;">
@@ -256,15 +265,15 @@
       <div class="mtr-right">
         <div class="mtr-item">
           <div class="mtr-num"><span class="mtr-count" data-target="100">0</span><span class="mtr-suffix">+</span></div>
-          <p class="mtr-desc">Proyectos entregados con estrategia sólida y precisión visual.</p>
+          <p class="mtr-desc">Proyectos entregados</p>
         </div>
         <div class="mtr-item">
           <div class="mtr-num"><span class="mtr-count" data-target="98">0</span><span class="mtr-suffix">%</span></div>
-          <p class="mtr-desc">Clientes que vuelven por nuestra calidad y resultados probados.</p>
+          <p class="mtr-desc">Clientes que vuelven</p>
         </div>
         <div class="mtr-item">
           <div class="mtr-num"><span class="mtr-count" data-target="86">0</span><span class="mtr-suffix">+</span></div>
-          <p class="mtr-desc">Marcas impactantes construidas con alto rendimiento global.</p>
+          <p class="mtr-desc">Marcas construidas</p>
         </div>
 
       </div>
@@ -298,8 +307,7 @@
           <span class="bs-card-label">VISION</span>
         </div>
         <h3 class="bs-card-title"><strong>ESTRATEGIA</strong> PRIMERO</h3>
-        <p class="bs-card-desc">Antes de empezar, definimos la dirección a seguir. Ya sea una identidad, diseño web o
-          automatización, nos aseguramos de resolver el problema correcto.</p>
+        <p class="bs-card-desc">Definimos la dirección exacta antes de crear cualquier solución. Aseguramos resolver el problema correcto desde el inicio.</p>
       </article>
 
       <article class="bs-card">
@@ -308,8 +316,7 @@
           <span class="bs-card-label">VISION</span>
         </div>
         <h3 class="bs-card-title"><strong>DISEÑO</strong> EN FASES</h3>
-        <p class="bs-card-desc">Trabajamos en ciclos enfocados con revisiones periódicas. Verás el progreso
-          semanalmente, no mensualmente. Sin grandes revelaciones ni sorpresas: solo un impulso constante.</p>
+        <p class="bs-card-desc">Ciclos enfocados con revisiones semanales. Sin sorpresas, solo progreso constante e iteraciones ágiles.</p>
       </article>
 
       <article class="bs-card">
@@ -318,8 +325,7 @@
           <span class="bs-card-label">VISION</span>
         </div>
         <h3 class="bs-card-title"><strong>LANZAMIENTO</strong></h3>
-        <p class="bs-card-desc">Acompañamos durante la implementación y medimos lo que realmente importa. Cada proyecto
-          nos enseña algo que mejora el siguiente.</p>
+        <p class="bs-card-desc">Acompañamos la implementación y medimos resultados reales. Cada proyecto se convierte en el estándar del siguiente.</p>
       </article>
     </div>
   </section>
@@ -328,7 +334,7 @@
 
   <section id="contact">
     <div class="cta-bg" id="ctaBg">
-      <img src="img/CTA.webp" alt="" class="cta-bg-img" loading="lazy" decoding="async">
+      <img src="../img/CTA.webp" alt="" class="cta-bg-img" loading="lazy" decoding="async">
     </div>
 
     <!-- STATE 1: Stat view (default) -->
@@ -502,7 +508,7 @@
   <footer id="footer">
     <div class="ftr-inner">
       <div class="ftr-left">
-        <div class="ftr-logo"><img class="ftr-logo-img" src="img/Logotipo o.webp" alt="BLCK VISION"></div>
+        <div class="ftr-logo"><img class="ftr-logo-img" src="../img/Logotipo o.webp" alt="BLCK VISION"></div>
         <p class="ftr-tagline">Infraestructura inteligente para empresas que no pueden permitirse más fricción.</p>
       </div>
       <nav class="ftr-nav">
@@ -625,6 +631,66 @@
   <!-- ══ SCRIPTS ════════════════════════════════════════ -->
   <script src="main.js"></script>
   <script src="projects.js"></script>
+
+  <!-- MOBILE: Fix navbar GSAP centering + Hamburger menu -->
+  <script>
+    /* ── Fix Navbar Centering in GSAP ── */
+    // GSAP animates 'y', overriding our 'transform: translateX(-50%)'.
+    // This tells GSAP to permanently maintain xPercent: -50.
+    if (typeof gsap !== 'undefined') {
+      gsap.set('#navbar', { xPercent: -50 });
+    }
+
+    /* ── Mobile hamburger menu ─────────────────────────── */
+    (function () {
+      var ham = document.getElementById('navHamburger');
+      var menu = document.getElementById('mobileMenu');
+      if (!ham || !menu) return;
+      var links = menu.querySelectorAll('.mm-link');
+      var open = false;
+      var mmIsotipo = document.querySelector('.mm-isotipo');
+
+      function openMenu() {
+        open = true;
+        menu.classList.add('is-open');
+        ham.classList.add('is-active');
+        document.getElementById('navbar').classList.add('menu-open');
+        ham.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+        gsap.set(links, { y: 50, opacity: 0 });
+        gsap.set(mmIsotipo, { opacity: 0, y: -20 });
+        gsap.to(links, {
+          y: 0, opacity: 1,
+          duration: 0.55, stagger: 0.07,
+          ease: 'power3.out', delay: 0.18
+        });
+        gsap.to(mmIsotipo, {
+          opacity: 1, y: 0,
+          duration: 0.55, ease: 'power3.out', delay: 0.2
+        });
+      }
+
+      function closeMenu() {
+        open = false;
+        gsap.to([links, mmIsotipo], {
+          y: -30, opacity: 0,
+          duration: 0.28, stagger: 0.04, ease: 'power2.in',
+          onComplete: function () {
+            menu.classList.remove('is-open');
+          ham.classList.remove('is-active');
+          document.getElementById('navbar').classList.remove('menu-open');
+          ham.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+          }
+        });
+      }
+
+      ham.addEventListener('click', function () { open ? closeMenu() : openMenu(); });
+      links.forEach(function (l) {
+        l.addEventListener('click', function () { closeMenu(); });
+      });
+    })();
+  </script>
 
 </body>
 

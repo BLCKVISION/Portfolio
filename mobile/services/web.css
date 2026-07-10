@@ -1,0 +1,565 @@
+﻿/* ══════════════════════════════════════════════════════
+   identidad.css — Identidad Visual page
+   Path: blck/services/identidad.css
+   ══════════════════════════════════════════════════════ */
+
+/* ── Hero sec-bar: pinned to top like index.html ───── */
+.page-web .srv-hero-topbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0;
+  padding-top: 40px;
+}
+
+/* ── Hero: CTA.webp only, no extra overlays ────────── */
+.page-web #srv-hero {
+  background: #000;
+  /* fallback while image loads */
+  padding: 80px 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Image: full cover, no blend / opacity tweaks */
+.page-web .srv-hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  opacity: 1;
+  mix-blend-mode: normal;
+}
+
+/* Gradient overlay kept minimal — just enough for text legibility at the bottom */
+.page-web .srv-hero-gradient {
+  background: linear-gradient(to bottom,
+      transparent 0%,
+      transparent 55%,
+      rgba(0, 0, 0, 0.65) 80%,
+      rgba(0, 0, 0, 0.92) 100%);
+}
+
+/* Kill the purple glow and side fades — clean image only */
+.page-web .srv-hero-purple-glow {
+  display: none;
+}
+
+.page-web .srv-hero-sides {
+  display: none;
+}
+
+/* ── Hero bottom: 2-column grid — desc LEFT col, title RIGHT col ── */
+.page-web .srv-hero-bottom {
+  position: relative;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: end;
+  /* both columns align to the bottom edge */
+  gap: 40px;
+  width: 100%;
+}
+
+/* LEFT column: title aligned to bottom left */
+.page-web .srv-hero-title-col {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+/* RIGHT column: description centered vertically in its half */
+.page-web .srv-hero-desc-col {
+  display: flex;
+  align-items: center;
+  /* center desc vertically in column */
+  justify-content: flex-end;
+  padding-bottom: 4px;
+}
+
+/* Title — LEFT side, exactly 2.5rem, left-aligned */
+.page-web .srv-hero-title {
+  font-family: 'ML', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  color: #fff;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-align: left;
+}
+
+.page-web .srv-hero-title strong {
+  font-family: 'MR', sans-serif;
+  font-weight: 400;
+}
+
+.page-web .srv-hero-title .line {
+  display: block;
+  overflow: hidden;
+}
+
+.page-web .srv-hero-title .line-inner {
+  display: block;
+}
+
+/* Description — RIGHT side, small caps, faded */
+.page-web .srv-hero-desc {
+  font-family: 'ML', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: rgba(255, 255, 255, .5);
+  line-height: 1.7;
+  max-width: 90%;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+
+.page-web .srv-hero-desc strong {
+  color: rgba(255, 255, 255, .68);
+  font-family: 'MR', sans-serif;
+  font-weight: 300;
+}
+
+/* ── Deliverables: accordion restored ───────────────── */
+.page-web #srv-deliverables {
+  background: linear-gradient(180deg, #000 0%, transparent 50%, transparent 85%, #000 100%), linear-gradient(90deg, #090909 0%, #000000 15%, #000000 85%, #090909 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Item 01 — visually shown "open" by default via these helper classes */
+.page-web .dlv-btn-open .dlv-icon {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, .8);
+}
+
+.page-web .dlv-body-open {
+  height: auto !important;
+  overflow: visible !important;
+}
+
+/* Remove borders from sec-bars and main section containers, keeping internal item borders intact */
+.page-web .sec-bar,
+.page-web .dlv-bar,
+.page-web .bprj-bar,
+.page-web .proc-bar,
+.page-web .mtr-bar,
+.page-web #srv-branding-projects,
+.page-web #srv-metrics,
+.page-web #srv-process,
+.page-web #srv-deliverables {
+  border: none !important;
+}
+
+/* Adjust deliverables typography (smaller per request) */
+.page-web .dlv-title {
+  font-size: 2.5rem;
+}
+
+.page-web .dlv-name {
+  font-size: clamp(1rem, 1.8vw, 1.3rem);
+}
+
+.page-web .dlv-desc {
+  font-size: 0.8rem;
+}
+
+/* ── Projects: 100vh container, grid 80vh vertically centered ── */
+.page-web #srv-branding-projects {
+  height: 100vh;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-web .bprj-grid {
+  height: 75vh;
+  flex-shrink: 0;
+}
+
+/* ── Process ──────────────────────────────────────────── */
+.page-web #srv-process {
+  background: linear-gradient(180deg, #000 0%, transparent 15%, transparent 85%, #000 100%), linear-gradient(90deg, #090909 0%, #000000 15%, #000000 85%, #090909 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ── Metrics: centered text per column ───────────────── */
+.page-web #srv-metrics {
+  background: linear-gradient(180deg, #000 0%, transparent 15%, transparent 85%, #000 100%), linear-gradient(90deg, #090909 0%, #000000 15%, #000000 85%, #090909 100%);
+  height: 100vh;
+  min-height: 100vh;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-web .mtr-grid {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.page-web .mtr-stat {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px;
+  border-right: 1px solid rgba(255, 255, 255, .06);
+}
+
+.page-web .mtr-stat:first-child {
+  padding-left: 0;
+}
+
+.page-web .mtr-stat:last-child {
+  border-right: none;
+}
+
+.page-web .mtr-num {
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.page-web .mtr-label {
+  font-family: 'ML', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, .32);
+  line-height: 1.65;
+  text-align: center;
+}
+
+/* ── CTA: Redesigned ──────────────────── */
+.web-cta-section {
+  background: #000;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0 40px;
+}
+
+.web-cta-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, #040404 0%, #000 30%, #000 70%, #040404 100%);
+  pointer-events: none;
+}
+
+.web-cta-section .cta-body {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  max-width: 600px;
+}
+
+.web-cta-section .cta-title {
+  font-family: 'ML', sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: #fff;
+}
+
+.web-cta-section .cta-desc {
+  font-family: 'ML', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 200;
+  color: rgba(255, 255, 255, .45);
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.web-cta-section .cta-btn {
+  margin-top: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  color: #000;
+  padding: 12px 32px;
+  border-radius: 100px;
+  font-family: 'ML', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  transition: transform 0.3s ease;
+}
+
+.web-cta-section .cta-btn span {
+  transition: transform 0.3s ease;
+}
+
+.web-cta-section .cta-btn:hover {
+  transform: scale(1.03);
+}
+
+.web-cta-section .cta-btn:hover span {
+  transform: translateX(4px);
+}
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 900px) {
+  .page-web #srv-hero {
+    padding: 0 24px 48px;
+  }
+
+  .page-web .srv-hero-bottom {
+    flex-direction: column-reverse;
+    /* mobile: title on top, desc below */
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .page-web .srv-hero-title {
+    text-align: left;
+    font-size: 2rem;
+  }
+
+  .page-web .srv-hero-desc {
+    max-width: 100%;
+  }
+
+  .page-web .bprj-grid {
+    height: 70vh;
+  }
+
+  .page-web #srv-metrics {
+    padding: 60px 24px;
+  }
+
+  .page-web .mtr-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .page-web .mtr-stat {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .06);
+    padding: 0 0 40px;
+  }
+
+  .page-web .mtr-stat:last-child {
+    border-bottom: none;
+  }
+}
+
+
+.page-web .srv-hero-desc {
+  font-family: 'ML', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: rgba(255, 255, 255, .5);
+  line-height: 1.7;
+  max-width: 90%;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+.page-web .dlv-title {
+  font-size: 2rem;
+}
+
+.dlv-icon {
+  font-family: 'ML', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: rgba(255, 255, 255, .15);
+  flex-shrink: 0;
+  transition: transform 0.8s, color 0.8s;
+}
+
+.dlv-item {
+  display: grid;
+  grid-template-columns: 28% 1fr;
+  padding: 45px 0 80px;
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+  align-items: start;
+}
+
+.page-web .dlv-name {
+  font-size: 1.4rem;
+}
+
+.dlv-num {
+  font-family: 'MR', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 200;
+  color: rgba(255, 255, 255, .9);
+  letter-spacing: 0.05em;
+  /* padding-top: 4px; */
+}
+
+.page-web .dlv-desc {
+  font-size: 0.9rem;
+}
+
+.proc-title {
+  font-family: 'ML';
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.1;
+  letter-spacing: -.03em;
+  /* margin-bottom: 24px; */
+}
+
+.proc-dur {
+  font-family: 'ML', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 200;
+  color: rgba(255, 255, 255, .3);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.proc-desc {
+  font-family: 'ML', sans-serif;
+  font-size: 0.86rem;
+  font-weight: 300;
+  color: #666;
+  text-transform: none;
+  letter-spacing: 0;
+  line-height: 1.8;
+  /* max-width: 480px; */
+}
+
+.proc-body-inner {
+  padding: 20px 0 60px;
+}
+
+#srv-metrics {
+  background: #000;
+  padding: 100px 60px;
+  border-top: 1px solid rgba(255, 255, 255, .06);
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.web-cta-section .cta-title {
+  font-family: 'ML', sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: #fff;
+}
+
+.web-cta-section .cta-body {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  max-width: 55%;
+}
+
+.web-cta-section .cta-desc {
+  font-family: 'ML', sans-serif;
+  font-size: 0.97rem;
+  font-weight: 200;
+  color: rgba(255, 255, 255, .45);
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+  /* text-transform: uppercase; */
+}
+
+
+.mtr-sfx {
+  font-size: 0.8em;
+  letter-spacing: -1px;
+}
+
+.page-web .mtr-label {
+  font-family: 'ML', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, .32);
+  line-height: 1.65;
+  text-align: center;
+}
+
+/* ── FOUC Prevention / Scroll Trigger Initial States ── */
+.page-web .dlv-header,
+.page-web [data-dlv],
+.page-web #slider-view,
+.page-web #entregamos .sec-bar,
+.page-web #entregamos #ui-bottom {
+  opacity: 0;
+}
+
+
+.page-web .srv-hero-title {
+  text-align: center !important;
+  font-size: 1.55rem !important;
+}
+
+.page-web .dlv-title {
+  font-size: 1.9rem !important;
+}
+
+.dlv-num {
+  font-family: 'MR', sans-serif;
+  font-size: 1.2rem !important;
+  font-weight: 200 !important;
+  color: rgba(255, 255, 255, .3) !important;
+  letter-spacing: 0.05em !important;
+  /* padding-top: 4px; */
+}
+
+.dlv-item {
+  display: grid;
+  grid-template-columns: 20% 1fr !important;
+  padding: 45px 0 80px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, .08) !important;
+  align-items: start !important;
+}
+
+.page-web .dlv-name {
+  font-size: 1.2rem !important;
+}
+
+.dlv-inner {
+  padding: 80px 20px 120px !important;
+}
+
+.page-body .proc-title {
+  font-size: 2.2rem !important;
+  text-align: center !important;
+}

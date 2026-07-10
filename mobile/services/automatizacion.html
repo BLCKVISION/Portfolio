@@ -2,11 +2,6 @@
 <html lang="es">
 
 <head>
-  <script>
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 900) {
-      window.location.replace("../mobile/services/automatizacion.html");
-    }
-  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Automatización IA — BLCK VISION</title>
@@ -21,8 +16,9 @@
 
   <!-- CSS — paths relative to blck/ -->
   <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../mobile.css">
   <link rel="stylesheet" href="../pages.css">
-  <link rel="stylesheet" href="../services.css">
+  <link rel="stylesheet" href="../../services.css">
   <link rel="stylesheet" href="../projects.css">
   <link rel="stylesheet" href="automatizacion.css">
 </head>
@@ -45,31 +41,43 @@
   <div id="cursor"></div>
 
   <!-- ══ NAVBAR ════════════════════════════════════════════= -->
-  <nav id="navbar">
-    <div class="nav-left">
-      <a href="../index.html" class="nav-link">INICIO</a>
+        <nav id="navbar">
+      <div class="nav-left">
+        <a href="../indexphone.html#hero" class="nav-isotipo-wrap">
+          <img class="nav-isotipo" src="../../img/Isotipo.png" alt="BLCK VISION">
+        </a>
+      </div>
+      <div class="nav-right">
+        <button class="nav-hamburger" id="navHamburger" aria-label="Abrir menÃº" aria-expanded="false">
+          <span class="ham-line ham-l1"></span>
+          <span class="ham-line ham-l2"></span>
+          <span class="ham-line ham-l3"></span>
+        </button>
+      </div>
+    </nav>
+
+  <!-- â•â• FULLSCREEN MOBILE MENU â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mm-bg"></div>
+    <img src="../../img/Isotipo.png" class="mm-isotipo" alt="BLCK VISION">
+    <nav class="mm-nav">
+      <a href="../indexphone.html#hero" class="mm-link">INICIO</a>
+      <a href="../indexphone.html#trust" class="mm-link">NOSOTROS</a>
+      <a href="../indexphone.html#services" class="mm-link">SERVICIOS</a>
+      <a href="../indexphone.html#entregamos" class="mm-link">PROYECTOS</a>
+      <a href="../indexphone.html#contact" class="mm-link">CONTACTAR</a>
+    </nav>
+    <div class="mm-footer">
+      <span>BLCK VISION c 2025</span>
     </div>
-    <div class="nav-links">
-      <a href="../index.html#trust" class="nav-link">NOSOTROS</a>
-      <a href="../index.html#services" class="nav-link">SERVICIOS</a>
-      <a href="../index.html#entregamos" class="nav-link">PROYECTOS</a>
-    </div>
-    <div class="nav-right">
-      <a href="#" class="nav-cta" id="automatContactCta">
-        CONTACTAR
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-          <path d="M5 12h14M12 5l7 7-7 7" />
-        </svg>
-      </a>
-    </div>
-  </nav>
+  </div>
 
   <!-- ══ HERO ═════════════════════════════════════════════= -->
   <section id="srv-hero">
 
     <!-- Background image only — no overlays, no isotipo -->
     <div class="srv-hero-bg">
-      <img src="../img/srv_automatizacion.webp" alt="Automatización IA BLCK VISION" loading="eager" decoding="async">
+      <img src="../../img/srv_automatizacion.webp" alt="Automatización IA BLCK VISION" loading="eager" decoding="async">
     </div>
 
     <!-- Top bar -->
@@ -110,7 +118,7 @@
       <span class="sec-bar-right">01 — 03</span>
     </div>
     <div class="stmt-body">
-      <p class="stmt-text" id="stmtText">ELIMINAMOS EL TRABAJO REPETITIVO. REEMPLAZAMOS LA FRICCIÓN OPERATIVA CON AGENTES DE IA INTELIGENTES.</p>
+      <p class="stmt-text" id="stmtText">Eliminamos el trabajo repetitivo. Reemplazamos la fricción operativa con agentes de IA inteligentes.</p>
     </div>
   </section>
 
@@ -128,13 +136,7 @@
       <span>VOLVER</span>
     </div>
 
-    <!-- WIDGET CONTRATAR FIJO -->
-    <div class="glass-widget-wrapper hover-target" id="hire-widget">
-      <div class="glass-widget">
-        <div class="widget-text">INICIAR PROYECTO</div>
-        <div class="widget-arrow">&#8594;</div>
-      </div>
-    </div>
+    
 
     <!-- UI: Barra inferior -->
     <div class="ui-layer bottom-bar" id="ui-bottom" style="display:none">
@@ -181,6 +183,9 @@
       <!-- PIE DE PÁGINA -->
       <div class="cta-wrapper" id="proj-footer">
         <div class="cta-section gs-reveal">
+                    <div style="text-align: center; margin-bottom: 40px;">
+            <a href="https://wa.me/584121234567?text=Hola%2C%20quiero%20iniciar%20un%20proyecto" class="cta-wa hover-target" target="_blank" rel="noopener">EMPEZAR PROYECTO</a>
+          </div>
           <div class="discover-more">
             <div class="discover-grid" id="discover-grid" style="margin-bottom: 40px;"></div>
             <div style="text-align: left;">
@@ -351,7 +356,7 @@
   <!-- ══ CONTACT CTA ════════════════════════════════════ -->
   <section id="contact">
     <div class="cta-bg" id="ctaBg">
-      <img src="../img/srv_automatizacion.webp" alt="" class="cta-bg-img" loading="lazy" decoding="async">
+      <img src="../../img/srv_automatizacion.webp" alt="" class="cta-bg-img" loading="lazy" decoding="async">
     </div>
 
     <!-- STATE 1: Stat view (default) -->
@@ -489,6 +494,12 @@
       if (typeof preloaderDone !== 'undefined' && preloaderDone) { revealHero(); }
       else if (typeof pageRevealQueue !== 'undefined') { pageRevealQueue.push(revealHero); }
       else { window.addEventListener('load', revealHero); }
+      /* Reveal navbar on mobile services */
+      function revealNavMobile() {
+        gsap.to('#navbar', { y: 0, duration: 0.7, ease: 'power3.out' });
+      }
+      if (typeof preloaderDone !== 'undefined' && preloaderDone) { revealNavMobile(); }
+      else if (typeof pageRevealQueue !== 'undefined') { pageRevealQueue.push(revealNavMobile); }
 
       /* ── Deliverables stagger entrance ─────────────────── */
       gsap.set('.dlv-header', { opacity: 0, y: 40 });
@@ -532,6 +543,55 @@
     })();
   </script>
 
+  <script>
+    (function () {
+      var ham = document.getElementById('navHamburger');
+      var menu = document.getElementById('mobileMenu');
+      if (!ham || !menu) return;
+      var links = menu.querySelectorAll('.mm-link');
+      var open = false;
+      var mmIsotipo = document.querySelector('.mm-isotipo');
+
+      function openMenu() {
+        open = true;
+        menu.classList.add('is-open');
+        ham.classList.add('is-active');
+        document.getElementById('navbar').classList.add('menu-open');
+        ham.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+        gsap.set(links, { y: 50, opacity: 0 });
+        gsap.set(mmIsotipo, { opacity: 0, y: -20 });
+        gsap.to(links, {
+          y: 0, opacity: 1,
+          duration: 0.55, stagger: 0.07,
+          ease: 'power3.out', delay: 0.18
+        });
+        gsap.to(mmIsotipo, {
+          opacity: 1, y: 0,
+          duration: 0.55, ease: 'power3.out', delay: 0.2
+        });
+      }
+
+      function closeMenu() {
+        gsap.to([links, mmIsotipo], {
+          y: -30, opacity: 0,
+          duration: 0.28, stagger: 0.04, ease: 'power2.in',
+          onComplete: function () {
+            menu.classList.remove('is-open');
+            ham.classList.remove('is-active');
+            document.getElementById('navbar').classList.remove('menu-open');
+            ham.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+          }
+        });
+      }
+
+      ham.addEventListener('click', function () { open ? closeMenu() : openMenu(); });
+      links.forEach(function (l) {
+        l.addEventListener('click', function () { closeMenu(); });
+      });
+    })();
+  </script>
 </body>
 
 </html>
