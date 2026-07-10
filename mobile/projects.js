@@ -1,4 +1,4 @@
-﻿gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 const _allProjects = [
   {
@@ -27,17 +27,9 @@ const _allProjects = [
     folder: "Aura"
   }
 ].map(p => {
-  let prefix = 'img/projects/';
-  const projectScript = document.querySelector('script[src*="projects.js"]');
-  if (projectScript) {
-    const src = projectScript.getAttribute('src');
-    if (src && src.includes('project/')) {
-      prefix = '../project/img/projects/';
-    } else if (src && src.startsWith('../../')) {
-      prefix = '../../img/projects/';
-    } else if (src && src.startsWith('../')) {
-      prefix = '../img/projects/';
-    }
+  let prefix = '../img/projects/';
+  if (window.location.pathname.includes('/services/')) {
+    prefix = '../../img/projects/';
   }
   const dir = prefix + p.folder + '/';
   return {

@@ -1453,20 +1453,37 @@ body {
 @media (max-width: 900px) {
   .page-body #srv-hero {
     padding-top: 180px !important;
-    min-height: auto !important;
-    padding-bottom: 80px !important;
+    height: 100vh !important;
+    padding-bottom: 40px !important;
   }
 
-  .page-body .srv-hero-content {
-    align-items: center;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+  .page-body .srv-hero-bottom {
+    align-items: center !important;
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+  
+  .page-body .srv-hero-title-col {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
   }
 
   .page-body .srv-hero-title {
     font-size: clamp(2rem, 9vw, 3.2rem) !important;
-    text-align: center;
+    text-align: center !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  
+  .page-body .srv-hero-title .line {
+    display: block !important;
+    text-align: center !important;
   }
 
   .page-body .srv-hero-desc {
