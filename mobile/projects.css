@@ -136,7 +136,7 @@ html {
   left: 30px;
   right: 30px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: flex-end;
   mix-blend-mode: difference;
   color: white;
@@ -144,6 +144,20 @@ html {
 
 #slide-counter {
   font-family: 'ML', sans-serif;
+}
+
+@keyframes pulse-tap {
+  0%, 100% { opacity: 0.45; }
+  50% { opacity: 0.95; }
+}
+
+.tap-indicator {
+  font-family: 'ML', sans-serif;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  animation: pulse-tap 2s infinite ease-in-out;
 }
 
 /* === SLIDER HERO === */

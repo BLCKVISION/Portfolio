@@ -69,7 +69,7 @@
 
     <!-- Background image only — no overlays, no isotipo -->
     <div class="srv-hero-bg">
-      <img src="../img/svr_identidad_2.webp" alt="Identidad Visual BLCK VISION" loading="eager" decoding="async">
+      <img src="../img/srv_identidad.webp" alt="Identidad Visual BLCK VISION" loading="eager" decoding="async">
     </div>
 
     <!-- Top bar -->
@@ -112,7 +112,8 @@
       <span class="sec-bar-right">01 — 03</span>
     </div>
     <div class="stmt-body">
-      <p class="stmt-text" id="stmtText">UNA IDENTIDAD QUE NO SE DIFERENCIA ES INVISIBLE. CREAMOS MARCAS QUE OBLIGAN A MIRAR Y DOMINAR.</p>
+      <p class="stmt-text" id="stmtText">UNA IDENTIDAD QUE NO SE DIFERENCIA ES INVISIBLE. CREAMOS MARCAS QUE OBLIGAN A
+        MIRAR Y DOMINAR.</p>
     </div>
   </section>
 
@@ -236,7 +237,8 @@
             </button>
             <div class="dlv-body">
               <div class="dlv-body-inner">
-                <p class="dlv-desc">Sabrás exactamente qué hace única a tu marca y cómo comunicarlo. Tendrás una dirección clara antes de invertir un peso en diseño.</p>
+                <p class="dlv-desc">Sabrás exactamente qué hace única a tu marca y cómo comunicarlo. Tendrás una
+                  dirección clara antes de invertir un peso en diseño.</p>
               </div>
             </div>
           </div>
@@ -251,7 +253,8 @@
             </button>
             <div class="dlv-body">
               <div class="dlv-body-inner">
-                <p class="dlv-desc">Tu equipo, tus proveedores y tus clientes verán siempre la misma marca. Sin versiones desactualizadas ni interpretaciones libres.</p>
+                <p class="dlv-desc">Tu equipo, tus proveedores y tus clientes verán siempre la misma marca. Sin
+                  versiones desactualizadas ni interpretaciones libres.</p>
               </div>
             </div>
           </div>
@@ -266,7 +269,8 @@
             </button>
             <div class="dlv-body">
               <div class="dlv-body-inner">
-                <p class="dlv-desc">Verás tu marca viva antes de lanzar. Tarjetas, redes, packaging — todo listo para usar el día uno.</p>
+                <p class="dlv-desc">Verás tu marca viva antes de lanzar. Tarjetas, redes, packaging — todo listo para
+                  usar el día uno.</p>
               </div>
             </div>
           </div>
@@ -276,7 +280,7 @@
     </div>
   </section>
 
-  
+
 
   <!-- ══ PROCESS ════════════════════════════════════════════ -->
   <section id="srv-process" class="grain">
@@ -367,7 +371,7 @@
     </div>
   </section>
 
-  
+
 
   <!-- ══ SCRIPTS ════════════════════════════════════════════ -->
   <script src="../pages.js"></script>
@@ -388,7 +392,7 @@
 
 
 
-        /* ── Accordion: Deliverables (all start collapsed) ───── */
+    /* ── Accordion: Deliverables (all start collapsed) ───── */
     document.querySelectorAll('[data-dlv] .dlv-btn').forEach(function (btn) {
       var body = btn.parentElement.querySelector('.dlv-body');
       var icon = btn.querySelector('.dlv-icon');
@@ -406,7 +410,7 @@
             height: 0,
             duration: 0.22,
             ease: 'power2.inOut',
-            onComplete: function() { ScrollTrigger.refresh(); }
+            onComplete: function () { ScrollTrigger.refresh(); }
           });
         });
         /* Open the clicked one if it wasn't already open */
@@ -417,7 +421,7 @@
             height: 'auto',
             duration: 0.28,
             ease: 'power2.out',
-            onComplete: function() { ScrollTrigger.refresh(); }
+            onComplete: function () { ScrollTrigger.refresh(); }
           });
         }
       });
@@ -435,7 +439,7 @@
             height: 0,
             duration: 0.22,
             ease: 'power2.inOut',
-            onComplete: function() { ScrollTrigger.refresh(); }
+            onComplete: function () { ScrollTrigger.refresh(); }
           });
         });
         if (!isOpen) {
@@ -444,7 +448,7 @@
             height: 'auto',
             duration: 0.28,
             ease: 'power2.out',
-            onComplete: function() { ScrollTrigger.refresh(); }
+            onComplete: function () { ScrollTrigger.refresh(); }
           });
         }
       });
@@ -485,7 +489,7 @@
 
 
 
-            /* ── Deliverables stagger entrance ─────────────────── */
+      /* ── Deliverables stagger entrance ─────────────────── */
       gsap.set('.dlv-header', { opacity: 0, y: 40 });
       gsap.set('[data-dlv]', { opacity: 0, y: 28 });
       ScrollTrigger.create({

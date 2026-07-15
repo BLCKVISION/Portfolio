@@ -47,7 +47,7 @@ var heroRevealQueue = [];
 
 /* ── 1. Register + Lenis ─────────────────────────── */
 gsap.registerPlugin(ScrollTrigger);
-var lenis = new Lenis({ duration:1.6, smoothWheel:true, wheelMultiplier:.9 });
+var lenis = new Lenis({ duration:1.6, smoothWheel:true, wheelMultiplier:.9, syncTouch: true, touchMultiplier: 0.6, touchInertiaMultiplier: 10 });
 function raf(t){ lenis.raf(t); requestAnimationFrame(raf); }
 requestAnimationFrame(raf);
 lenis.on('scroll', ScrollTrigger.update);
